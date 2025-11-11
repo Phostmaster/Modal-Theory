@@ -1,0 +1,17 @@
+Claim,Prediction,Data,Source
+g_mode,0.085,4?G,Flat-fabric limit
+?_CP,-0.2588,CP violation,cos(255°)
+?,6.3e-10,Planck 2018,Baryogenesis
+m_top,172.9 GeV,PDG,Top quark
+m_e,0.511 MeV,PDG,Electron
+m_?,105.7 MeV,PDG,Muon
+m_?,1776.8 MeV,PDG,Tau
+?Li/H,1.60e-10,BBN,Suppression
+D/H,2.58e-5,BBN,Abundance
+Y_p,0.247,BBN,Helium fraction
+?_DM h²,0.12,Planck,Dark matter
+Force,10^{-6} N,SQUID-BEC,Tractor
+Lock time,33 hours,Adler,Phase lock
+Phase error,<0.01%,PID,Stability
+?,1.5e15 m,256³ sim,Coherence
+Parameters,0,—,Zero free
