@@ -12,8 +12,8 @@ Lab tests pending — no promises
 
 Files:
 
-MT_v7.pdf (compiled manifesto)
-v7.tex (LaTeX source)
+MT_v7.1.pdf (compiled manifesto)
+v7.1.tex (LaTeX source)
 v7_sim.py (validation chain)
 
 Update Notes (v7):
