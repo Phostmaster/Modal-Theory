@@ -1,39 +1,45 @@
-Modal Theory (MT) is a two-scalar, flat-space framework governed by a single coupling and a single phase lock:
+# Modal Theory (MT)
 
-g_mode = 0.085 (dimensionless)
-Delta theta = 255 degrees
+**A Geometrically Constrained Flat-Space Scalar Framework**
 
-With no free parameters, v7.2 presents a complete blueprint for a new technological age, deriving all 16 key observables of the Standard Model—gravity, CP violation, particle masses, dark matter, and beyond—from this phase relation. v7.2 extends v6 with 16 chapters covering cosmology, particle physics, energy, life, mind, agriculture, medicine, transport, communication, computation, sensors, materials, and space. All quantities are derived, testable, and consistent with data.
-Key Features:
+Modal Theory is a two-real-scalar field theory in flat Minkowski space, deriving key Standard Model observables from a Z₃ orbifold on the phase circle and decoherence to a unique 255° vacuum lock.
 
-No Higgs — masses from phase
-No dark matter — coherence torque
-No curvature — gravity as scalar mode
-Infinite energy, healing, learning, yield — 255 degrees lock
-Lab tests pending — no promises
+**Core Principle**  
+From one phase geometry: three generations exact, fine-structure constant algebraic, fermion hierarchies geometric, gravity scalar strain, dark sector relic torque.
 
-Files:
+**Key Features**  
+- No Higgs mechanism — masses from relic overlaps/seesaw  
+- No dark matter particles — torque from vacuum asymmetry  
+- No spacetime curvature — gravity as coherence strain  
+- Zero free parameters under explicit conventions  
+- Testable predictions: laboratory thrust, sidebands, material anomalies  
 
-MT_v7.2.pdf (compiled manifesto, updated with sandbox results)
-v7.2.tex (LaTeX source)
-modal_theory_toy_engine_v7.2.py (validation chain with original toy engine and sandbox tester)
-v7.2_results.txt (simulation outputs, including internal run data)
+**Current Status (v10 – January 15, 2026)**  
+v10 refines v9's geometric closure with explicit reproducibility:  
+- Λ_orb = 3/(2π) (sector spacing on unit circle)  
+- ξ_hier derived from cumulative overlap suppression  
+- κ ≈0.05 from CP Jarlskog match  
+- Off-diagonal overlaps ~0.64 (orbifold domain + images integral)  
+- Sensitivity analysis for α⁻¹ stability  
 
-Update Notes (v7.2):
+Quantitative refinements ongoing—ratios in characteristic geometric range, full PDG precision in progress.
 
-v7.2 integrates the original toy engine (v7.2 baseline) with the enhanced sandbox tester, consolidating all simulation tools into a single file. Syntax corrections (init and name) ensure compatibility.
-The sandbox tester adds stability guards, auto-stop functionality, detailed energy diagnostics, and a toy ZPE estimation, validated by a stable 255 degrees lock at 254.98 degrees (+/- 0.025 degrees error) and a thrust of 53.125 toy units.
-v7.2 builds on v7's manifesto, refining geometric constraints and simulation support. v6 remains the core theory.
-All predictions require lab validation; no guarantees are offered.
+**Files**  
+- `MT_v10.pdf` — Compiled paper (main document)  
+- `MT_v10.tex` — LaTeX source  
+- `appendix_proofs.tex` — Detailed derivations (V'', mode sums, integrals)  
+- `sandbox_tester.py` — Validation chain with toy engine (thrust/ZPE proxy)  
+- `results.txt` — Simulation outputs  
 
-Implementation Details:
+**Lab Tests Pending**  
+Predictions require experimental validation—no guarantees. Home/kitchen proxies in progress (graphite foil thrust, CEA-255™ strength).
 
-Original Toy Engine: Implements basic Verlet integration, periodic Laplacian, and collision detection for initial 255 degrees lock and thrust validation (e.g., 90 degrees and 270 degrees tests).
-Sandbox Tester: Enhances with stability guard (dt adjustment), auto-stop (12 stable windows), energy breakdown (E_total, E_kin, E_grad, E_pot, shellKE), circular statistics, and ZPE estimation. Internal run stopped at 8400 steps with average Delta theta = 254.98 degrees.
+**Contact**  
+peterbaldwin1000@gmail.com  
+Open to collaboration, peer review, and lab proposals.
 
-For Collaboration or Tests:
+**License**  
+Creative Commons Attribution 4.0 International (CC BY 4.0) — share/alike with attribution.
 
-Contact: peterbaldwin1000@gmail.com
-Open to peer review and lab proposals. 
-
+From one folded pretzel of phase space, the universe unfolds its constants. Quantitative refinements ongoing.
 
