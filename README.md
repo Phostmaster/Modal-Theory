@@ -14,7 +14,7 @@ From one phase geometry: three generations exact, fine-structure constant algebr
 - Zero free parameters under explicit conventions  
 - Testable predictions: laboratory thrust, sidebands, material anomalies  
 
-**Current Status (v10 – January 15, 2026)**  
+**Current Status (v10 – January 1st, 2026)**  
 v10 refines v9's geometric closure with explicit reproducibility:  
 - Λ_orb = 3/(2π) (sector spacing on unit circle)  
 - ξ_hier derived from cumulative overlap suppression  
