@@ -29,7 +29,9 @@ Quantitative refinements ongoing—ratios in characteristic geometric range, ful
 - `MT_v10.tex` — LaTeX source  
 - `appendix_proofs.tex` — Detailed derivations (V'', mode sums, integrals)  
 - `sandbox_tester.py` — Validation chain with toy engine (thrust/ZPE proxy)  
-- `results.txt` — Simulation outputs  
+- `results.txt` — Simulation outputs
+- Modal Theory v2 — Full Flat-Space Numerical Chain
+Earliest zero-parameter formulation. Presents the entire MT causal chain (GR → CP → matter → BBN) in a single deterministic framework. Superseded in rigor by v9/v10, but retained as the clearest conceptual overview.
 
 **Lab Tests Pending**  
 Predictions require experimental validation—no guarantees. Home/kitchen proxies in progress (graphite foil thrust, CEA-255™ strength).
