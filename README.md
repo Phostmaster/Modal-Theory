@@ -1,6 +1,8 @@
 Modal Theory (MT)
 A Geometrically Constrained Flat-Space Scalar Framework
 
+"Modal Theory derives the Standard Model, gravity, and cosmology from two real scalars locked at a single vacuum phase of 255° — no tuning, no curvature, no extra particles."
+
 Modal Theory is a two–real-scalar field theory formulated in flat Minkowski space. It derives key Standard Model and cosmological observables from a Z₃ orbifold on the phase circle followed by decoherence to a unique 255° vacuum lock.
 
 Core Principle
