@@ -1,0 +1,307 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\title{Toward a Gravitational Sector of General Emergence Mechanics\\
+\large Persistence Depth, Weak-Field Attraction, and Einstein-Like Effective Dynamics}
+\author{Peter Baldwin}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper develops an exploratory gravitational extension of General Emergence Mechanics (GEM) in which gravitational behaviour is associated with spatial and temporal variation in persistence depth within the coherence shell. In GEM, the observable universe is modelled as a dynamical coherence shell anchored at the $255^\circ$ vacuum minimum. The central proposal is that gradients in local persistence depth $D(\mathbf{x},t)$ may act as an effective source of attractive motion in the weak-field limit, with Newtonian-like behaviour emerging from the leading gradient term $-\nabla D$. A stochastic depth-field formalism is introduced to describe both coherent large-scale structure and small-scale fluctuations. Within this framework, gravitational time dilation is reinterpreted as variation in local relaxation time, horizon-like trapping appears as an extreme-depth regime, and galactic rotation-curve anomalies are provisionally recast as coherence-depth anomalies rather than unseen particulate mass. A further exploratory step is outlined in which Einstein-like field equations arise as an effective coarse-grained description of matter coupled to a dynamical persistence-depth field. The framework suggests falsifiable lines of investigation, including the possibility of structured correlations between galactic rotation curves and gravitational lensing patterns under a depth-anomaly interpretation. This paper does not claim to present a completed theory of gravity. Rather, it offers a mathematically explicit and falsifiable programme for investigating whether gravitational phenomena may emerge from persistence mechanics.
+\end{abstract}
+
+\section{Introduction}
+
+The origin of gravity remains one of the deepest open questions in physics. General relativity describes gravitational behaviour geometrically, while quantum field theory has not yet supplied a comparably successful microscopic account that unifies gravity with the other interactions. General Emergence Mechanics (GEM) approaches physical structure from a different starting point: persistence rather than geometry. In GEM, stable entities arise only when configurations remain coherent inside a dynamical shell anchored at a preferred vacuum phase.
+
+The purpose of the present paper is to explore whether gravity can be incorporated into GEM in a natural way. The central idea is simple: if persistence depth varies across space, then configurations may be dynamically favoured to move toward deeper regions of the shell, where coherence is more strongly supported. In the weak-field limit, this suggests an effective attractive force proportional to the negative gradient of the depth field.
+
+The proposal is exploratory. It does not yet amount to a full derivation of general relativity from GEM. Rather, it identifies a mathematically structured route by which weak-field attraction, time-dilation effects, horizon-like trapping, Einstein-like effective dynamics, and perhaps even certain dark-matter-like phenomenology might be reinterpreted within a common persistence-based framework.
+
+\section{Conceptual Foundation}
+
+In GEM, persistence depth $D(\mathbf{x},t)$ measures how strongly the local shell supports long-lived coherence. Depth is not merely a bookkeeping parameter; it is interpreted here as a dynamical field whose variation may influence the motion and stability of configurations within the shell.
+
+The central hypothesis of the present note is that what is ordinarily experienced as gravity may reflect an effective restoring tendency toward regions of greater persistence depth. On this view, gravity is not a separate fundamental interaction layered on top of the shell, but a manifestation of the shell's own preference for organising configurations where persistence is most strongly supported.
+
+This picture rests on three qualitative ideas:
+\begin{itemize}[leftmargin=1.5em]
+    \item persistence depth can vary spatially and temporally, potentially playing a role analogous, at effective level, to the way mass-energy sources gravitational structure in general relativity,
+    \item massive or highly coherent structures may source local depth anomalies,
+    \item test configurations may respond to those anomalies through effective motion toward deeper regions.
+\end{itemize}
+
+In this sense, a gravitating body may be interpreted as creating a local well of enhanced persistence depth. The deeper the well, the stronger the effective restoring pull toward it.
+
+A concise GEM-style summary is this: spacetime is not necessarily the primary stage on which persistence takes place. Rather, spacetime may be the effective map drawn to describe the collective behaviour of structures that have already won the persistence battle. On that view, gravity is not fundamental geometry first, but the large-scale motion law of persistent configurations responding to depth structure in the shell.
+
+\section{Stochastic Depth-Field Framework}
+
+A natural first step is to treat persistence depth as a fluctuating dynamical field rather than a fixed background quantity. We therefore consider a stochastic gradient-flow equation of the form
+\[
+\frac{\partial D}{\partial t}
+=
+-\gamma \frac{\delta F[D]}{\delta D}
++
+\xi(\mathbf{x},t),
+\]
+where $\gamma>0$ is an effective dissipation coefficient, $F[D]$ is the free-energy functional of the depth field, and $\xi(\mathbf{x},t)$ is a stochastic noise term representing unresolved fluctuations.
+
+A standard fluctuation-dissipation ansatz takes the noise to satisfy
+\[
+\langle \xi(\mathbf{x},t)\,\xi(\mathbf{x}',t') \rangle
+=
+2\gamma k_B T\,
+\delta(\mathbf{x}-\mathbf{x}')
+\delta(t-t').
+\]
+
+At the present level of development, this noise should be interpreted as an effective coarse-grained stochastic term rather than as a completed microscopic quantum theory.
+
+A natural prototype for the depth free energy is
+\[
+F[D]
+=
+\int d^3x
+\left[
+\frac{a}{2}\abs{\nabla D}^2
++
+V_D(D)
+\right],
+\]
+where the gradient term penalises sharp depth variation and the local potential $V_D(D)$ stabilises the field around a reference depth scale $D_0$. In this form, the deterministic dynamics favour spatially smooth depth structure while allowing localised wells or anomalies to form under appropriate sourcing or boundary conditions.
+
+Writing
+\[
+D(\mathbf{x},t)=D_0+\delta D(\mathbf{x},t),
+\]
+the two-point correlation function of fluctuations is
+\[
+C_D(\mathbf{r},t)
+=
+\langle \delta D(\mathbf{x},t)\,\delta D(\mathbf{x}+\mathbf{r},0)\rangle.
+\]
+For a linearised diffusive model with finite coherence lifetime, one expects a representative form of the kind
+\[
+C_D(r,t)
+\sim
+\exp\left(
+-\frac{r^2}{4\mathcal{D}t}
+-
+\frac{t}{\tau_{\mathrm{coh}}}
+\right),
+\]
+where $\mathcal{D}$ is an effective diffusion coefficient and $\tau_{\mathrm{coh}}$ is a characteristic coherence timescale. This form should be understood as an illustrative linearised ansatz rather than a fully derived result. For wave-like depth fluctuations, the diffusive term may be replaced by a propagating form such as \((r-ct)^2/\sigma^2\).
+
+The corresponding power spectrum,
+\[
+P_D(\mathbf{k},\omega)
+=
+\int d^3r\,dt\,
+C_D(\mathbf{r},t)\,
+e^{-i(\mathbf{k}\cdot\mathbf{r}-\omega t)},
+\]
+then separates low-frequency coherent depth structure from higher-frequency stochastic fluctuations. This distinction is potentially important if the same depth field is to underwrite both large-scale effective gravity and small-scale fluctuation-driven behaviour.
+
+\section{From Depth Gradients to Weak-Field Attraction}
+
+The central mechanical ansatz of this paper is that, in the weak-field and slow-motion limit, a persistent test configuration experiences an effective force proportional to the negative gradient of the local depth field:
+\[
+\mathbf{F}_{\mathrm{eff}}
+\propto
+-\nabla D(\mathbf{x}).
+\]
+
+This is not yet a first-principles derivation; it is an effective matching hypothesis motivated by the idea that configurations are dynamically favoured to move into regions where persistence is more strongly supported.
+
+If one writes
+\[
+D(\mathbf{x}) = D_0 + \Phi_{\mathrm{eff}}(\mathbf{x}),
+\]
+then Newtonian-like attraction is recovered whenever
+\[
+\Phi_{\mathrm{eff}}(\mathbf{x})
+\approx
+-\frac{GM}{r}.
+\]
+
+In that case, the leading effective force is
+\[
+\mathbf{F}_{\mathrm{eff}}
+\propto
+-\nabla \Phi_{\mathrm{eff}},
+\]
+which reproduces the familiar inverse-square behaviour in the weak-field limit.
+
+For a point particle of mass \(m\), one natural effective scaling ansatz is
+\[
+\mathbf{F}_{\mathrm{eff}} = -\frac{m}{D_0} \nabla D(\mathbf{x}),
+\]
+where \(D_0\) is a reference depth scale. This choice has the correct dimensions and suggests a universality of response to depth gradients analogous, at weak-field level, to equivalence-principle behaviour.
+
+\section{Toward Geodesic Motion and Post-Newtonian Structure}
+
+The next step beyond the weak-field ansatz is to ask whether corrections arising from shell stiffness, relaxation, and nonlinear depth dynamics can be organised into a post-Newtonian-style expansion. At the formal level, one may write
+\[
+\Phi_{\mathrm{GEM}}
+=
+-\frac{GM}{r}
+\left[
+1
++
+\alpha\left(\frac{GM}{rc^2}\right)
++
+\mathcal{O}\!\left(\frac{G^2M^2}{r^2c^4}\right)
+\right],
+\]
+where the coefficient \(\alpha\) encodes corrections arising from higher-order depth-gradient effects, shell stiffness, and relaxation structure.
+
+A corresponding effective weak-field line element may then be written schematically as
+\[
+ds^2
+\approx
+-
+\left(1+2\Phi_{\mathrm{GEM}}\right)dt^2
++
+\left(1-2\Phi_{\mathrm{GEM}}\right)d\mathbf{x}^2,
+\]
+where \(\Phi_{\mathrm{GEM}} < 0\) for attractive sources, matching standard weak-field conventions. The sign structure of the ansatz is chosen so that the \(g_{00}\) component supports a time-dilation interpretation in deep potential wells, while the spatial part follows the usual weak-field pattern familiar from the Schwarzschild metric. At present this should be read as consistency-motivated matching rather than as a completed derivation.
+
+At present this should be treated as an effective metric ansatz rather than a completed derivation of the Schwarzschild form from GEM. Its purpose is to make explicit the possibility that a depth-gradient formalism could, after suitable matching, generate effective geodesic motion.
+
+A fully rigorous derivation of the post-Newtonian coefficient \(\alpha\) from the GEM action remains an open problem. The point here is narrower: the structure of GEM does not forbid such an expansion, and in fact naturally suggests one once depth, stiffness, and relaxation are all permitted to contribute to the effective force law.
+
+\section{Time Dilation from Relaxation-Time Variation}
+
+Among the gravitational consequences of GEM, time dilation is one of the most natural. In GEM, time is not treated as an independent fundamental backdrop, but as the directional relaxation of the shell toward the preferred \(255^\circ\) minimum. The local pace of time is therefore governed by the local relaxation timescale,
+\[
+\tau_{\mathrm{shell}}.
+\]
+
+If persistence depth varies across space, then the local relaxation timescale is also expected to vary. In deeper regions of the shell, where the system is more strongly anchored and the persistence basin is more difficult to escape, relaxation may proceed more slowly. Operationally, this means that local clocks run more slowly. On this interpretation, gravitational time dilation is the temporal signature of stronger depth support.
+
+This is one of the most internally natural consequences of a gravitational extension of GEM, because it does not need to be inserted ad hoc. Once time is identified with relaxation and gravity is associated with persistence-depth structure, clock-rate variation follows almost immediately as a change in local recovery timescale.
+
+At present, the claim is not that the full relativistic time-dilation formula has already been derived from the GEM field equations. Rather, the claim is that GEM contains a native mechanism by which such a formula may arise. Quantitative recovery of weak-field timing relations remains a major task for future work.
+
+\section{Dark Matter as a Coherence Depth Anomaly}
+
+One of the most intriguing consequences of the depth-gradient picture is the possibility that at least some phenomena conventionally attributed to dark matter may instead reflect spatial anomalies in persistence depth. In the GEM framework, this would mean that the observed excess gravitational pull in galaxies and larger structures is not necessarily produced by unseen particulate mass, but may arise from extended regions of anomalously elevated coherence depth.
+
+On this picture, the approximately flat rotation curves observed in galaxies would arise because stars at large radii move inside a broad domain of enhanced persistence depth rather than orbiting only a luminous central mass embedded in a conventional dark halo. The additional depth gradient would then provide an effective inward force capable, in principle, of sustaining larger orbital velocities than those predicted from luminous matter alone.
+
+The following estimate is illustrative rather than derived from a fully specified galaxy-scale depth equation; its purpose is to show the order of magnitude required by the depth-anomaly picture. Consider a spiral galaxy with observed flat rotation curve \(v_{\rm flat} \sim 200\) km/s extending to radius \(R \sim 20\) kpc. Standard Newtonian dynamics from luminous matter alone would predict \(v(r) \propto r^{-1/2}\) at large \(r\). In the depth-anomaly picture, this requires
+\[
+\frac{\partial D}{\partial r} \sim -\frac{D_0 v_{\rm flat}^2}{r}
+\]
+for \(r > R_{\rm disk}\). This corresponds to a depth profile
+\[
+D(r) \approx D_0\left(1 - \frac{v_{\rm flat}^2}{c^2}\ln\left(\frac{r}{R_0}\right)\right),
+\]
+where \(R_0\) is a characteristic scale. For typical galaxies, \(v_{\rm flat}^2/c^2 \sim 10^{-6}\), so the required depth variation is extremely small — a logarithmic deviation of order parts per million.
+
+At present this should be treated as a conjectural extension rather than an established explanation. Its scientific value lies in the fact that it is directly testable. If depth anomalies are physically real, they should not merely reproduce one observable in isolation, but should imply structured relationships among galactic rotation-curve anomalies, gravitational lensing patterns, and large-scale structure and cosmic-web morphology. If plausible depth-field models can reproduce observed mass-to-light discrepancies without new particle species, this would represent a significant simplification. If they cannot, the proposal is correspondingly constrained or falsified.
+
+\section{Black Hole Limit and Horizon-Like Behaviour}
+
+The depth-gradient framework also suggests a natural extreme-field limit. If persistence depth becomes very large near a sufficiently compact object,
+\[
+D \to \infty,
+\]
+then the corresponding restoring gradient likewise becomes extremely strong. In this regime, outward propagation of excitations may become dynamically suppressed to the point of effective trapping.
+
+This provides a natural mechanical analogue of horizon-like behaviour: a boundary beyond which the shell's preference for coherence is so strong that escape becomes effectively impossible. Unlike the standard general-relativistic description, such a horizon would not be introduced fundamentally as a geometric causal boundary, but would arise instead as an extreme persistence-depth regime of the shell dynamics.
+
+A horizon-like boundary emerges when the depth gradient becomes so steep that the escape velocity reaches the speed of light. In the depth-gradient picture, this occurs when
+\[
+|\nabla D| \sim \frac{D_0}{r_S},
+\]
+where \(r_S = 2GM/c^2\) is the Schwarzschild radius. For \(r \lesssim r_S\), the effective barrier to outward motion becomes extremely large in this picture, suggesting a no-escape regime analogous to the classical horizon condition.
+
+At present this should be read as an analogy and research direction, not as a completed black-hole theory. Its main interest is that it suggests a persistence-mechanical way of rethinking horizon formation, strong-field trapping, and information retention in deep persistence basins.
+
+\section{Toward a Link with Quantum Gravity}
+
+The stochastic depth-field picture opens a natural path toward quantum-gravity-style questions. In GEM, gravity is here associated with the mean structure of persistence-depth gradients, while short-scale fluctuations of the same field may provide a candidate source of quantum-like behaviour.
+
+On this view, there is no absolute conceptual divide between classical gravity and microscopic fluctuation. Instead, one expects a crossover:
+\begin{itemize}[leftmargin=1.5em]
+    \item at large scales, coherent depth gradients dominate and effective classical attraction emerges,
+    \item at small scales, stochastic depth fluctuations become increasingly important.
+\end{itemize}
+
+This does not yet amount to a theory of quantum gravity. However, it does suggest a possible organising principle: classical gravitational structure may emerge as the mean behaviour of a fluctuating persistence-depth field, while higher-order correlations encode departures from purely classical motion.
+
+A natural starting point would be to compute the two-point correlation function \(\langle D(\mathbf{x})D(\mathbf{x}')\rangle\) from the stochastic action and compare its Fourier transform to the graviton propagator in linearised quantum gravity. If the structures match (up to field redefinitions), this would suggest that GEM depth fluctuations and linearised quantum-gravitational fluctuations may be capturing closely related effective physics in different languages. Conversely, systematic differences would indicate where GEM departs from standard quantum gravity and potentially generates new predictions.
+
+These are deep questions, and the present paper does not claim to resolve them. It only identifies the stochastic depth field as a natural place where a future GEM-based quantum-gravity connection might begin.
+
+\section{Future Work and Derivational Programme}
+
+The present paper is intended as a structured starting point rather than a completed gravitational theory. Several natural next steps would substantially strengthen the programme.
+
+\subsection{Strengthening the Weak-Field Derivation}
+
+The present weak-field mapping
+\[
+\mathbf{F}_{\mathrm{eff}} \propto -\nabla D
+\]
+is still an effective matching ansatz. A stronger derivation would proceed by starting from an explicitly depth-coupled action, linearising around a background \(D_0\), and deriving the effective test-particle equation of motion systematically. In practice, the key task is to identify the correct coupling between matter, shell phase, and depth gradients so that the Newtonian limit emerges without being imposed by hand.
+
+\subsection{Deriving Depth-Coupled Field Equations}
+
+A major theoretical step would be to derive Einstein-like field equations from a unified GEM effective action involving the phase field, matter, and the dynamical depth field. A promising route is to treat depth as a genuine field with its own kinetic and potential terms, then vary the total action with respect to an effective metric. The goal would be to identify the precise form of the depth stress-energy contribution and determine under what approximations the resulting field equations reduce to general relativity plus calculable GEM corrections.
+
+\subsection{Simulating Depth-Gradient Dynamics Numerically}
+
+The framework is well suited to numerical exploration. Several simulation programmes suggest themselves:
+\begin{itemize}[leftmargin=1.5em]
+    \item weak-field orbit simulations under prescribed depth profiles,
+    \item galaxy-scale tests of depth anomalies producing flat rotation curves,
+    \item horizon-like trapping in steep depth wells,
+    \item stochastic depth-field evolution under different choices of \(F[D]\).
+\end{itemize}
+Such simulations would not prove the theory, but they would sharpen intuition, identify inconsistencies early, and help distinguish robust consequences from artefacts of the present ansatz.
+
+\subsection{Testing the Depth-Anomaly Hypothesis Against Astrophysical Data}
+
+The dark-matter reinterpretation is only meaningful if it can confront real astronomical data. A natural programme would be to fit simple depth-anomaly profiles to observed galactic rotation curves, then compare the resulting inferred depth structure against lensing maps and large-scale structure data. Even a partial success would be interesting. A systematic failure, on the other hand, would be equally valuable because it would constrain or eliminate the most ambitious version of the hypothesis.
+
+\subsection{Clarifying the Stochastic--Quantum Connection}
+
+The stochastic depth-field picture currently functions as a bridge concept rather than a derivation. To clarify its relation to quantum gravity, one would need to determine whether the stochastic depth action can be quantised in a controlled way, whether its propagators resemble those of linearised gravitational theory, and whether the fluctuation sector respects consistency requirements such as causality and unitarity. The key question is whether the depth field is merely a coarse-grained effective variable or whether it points toward a genuinely more primitive description from which both classical gravity and quantum fluctuations emerge.
+
+\subsection{Observational and Conceptual Payoff}
+
+The value of these next steps is not only technical. If the programme succeeds even partially, it would strengthen the case that gravity is not fundamental geometry, but an emergent manifestation of persistence structure. If it fails, it will still have served a useful purpose by making the relevant hypotheses explicit and falsifiable rather than merely suggestive.
+
+\section{Conclusion}
+
+We have outlined an exploratory formalism in which gravitational behaviour may arise from spatial and temporal variation in persistence depth within the GEM coherence shell. In the weak-field limit, Newtonian-like attraction is associated with the leading depth gradient \(-\nabla D\), while Einstein-like effective equations, time-dilation effects, horizon-like trapping, and galactic-scale depth anomalies emerge as natural directions of extension within the same persistence-based framework.
+
+This paper does not claim to present a completed theory of gravity. Rather, it offers a mathematically explicit and falsifiable pathway by which gravitational phenomena might be reinterpreted as consequences of a more primitive persistence mechanics. If such a programme succeeds, gravity would no longer stand apart as an isolated geometric mystery, but would join emergence, stability, and temporal direction as different manifestations of the same underlying shell dynamics.
+
+The immediate next steps are clear:
+\begin{itemize}[leftmargin=1.5em]
+    \item strengthen the weak-field and post-Newtonian derivations,
+    \item derive the effective depth-coupled field equations more rigorously,
+    \item simulate depth-gradient dynamics numerically,
+    \item test the depth-anomaly hypothesis against astrophysical data,
+    \item and clarify the relation between stochastic depth fluctuations and quantum theory.
+\end{itemize}
+
+Whether or not the programme succeeds in full, it already serves a useful scientific purpose: it makes explicit, calculable, and falsifiable the possibility that gravity itself may be an emergent expression of the drive toward persistence.
+
+\end{document}

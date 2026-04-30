@@ -1,0 +1,289 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+
+\title{Toward a GEM-Inspired Traffic Control Framework\\
+\large Persistence Mechanics, Congestion Recovery, and Network Resilience in a Toy Corridor Simulation}
+\author{Peter Baldwin}
+\date{April 30, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper explores a speculative but operational application of General Emergence Mechanics (GEM) to traffic control. In GEM, persistent coherent behaviour depends on the coupled action of depth, stiffness, and viscosity/relaxation time. Here, a road corridor is treated as a coherence shell for vehicle flow, with congestion interpreted as loss of persistence and recovery interpreted as return toward a stable flow basin. A simple corridor simulation is used to compare baseline control with a GEM-inspired controller that adjusts speed harmonisation, ramp metering, and temporary downstream capacity support in order to maintain a persistence score above a critical threshold. The results suggest that, in this toy setting, GEM-style control improves resilience under disruption: mean and peak congestion are reduced, total throughput is increased, speed variance and stop-go burden are lowered, and in multi-incident conditions the GEM controller achieves measurable recovery where the baseline remains outside the recovery band. The paper does not claim to provide a production-ready traffic algorithm. Rather, it introduces GEM as a transferable control language for systems whose primary challenge is not merely throughput, but persistent coherent behaviour under stress.
+\end{abstract}
+
+\noindent\textbf{Keywords:} General Emergence Mechanics, GEM, traffic control, congestion, resilience, persistence mechanics, adaptive control, recovery time, ramp metering, variable speed limits
+
+\bigskip
+\noindent\textit{Note.} This paper presents an exploratory toy-model demonstration rather than a validated traffic-engineering deployment. Its purpose is to test whether GEM-style persistence language can be made operational in a dynamic control setting.
+
+\tableofcontents
+
+\section{Introduction}
+
+Traffic networks are classic examples of systems that can appear stable until a relatively small perturbation triggers sudden and persistent breakdown. A brief incident, poorly timed merge, or corridor overload can generate stop-start waves, queue spillback, long recovery times, and cascading secondary failures. In this sense, traffic is not merely a flow optimisation problem. It is also a persistence problem.
+
+General Emergence Mechanics (GEM) provides a natural language for such systems. In GEM, stable structures persist only when three coupled axes jointly support coherent behaviour:
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{depth} --- how much disturbance a system can absorb before collapse,
+    \item \textbf{stiffness} --- how strongly it resists local perturbation,
+    \item \textbf{viscosity / relaxation time} --- how quickly or slowly it recovers after distortion.
+\end{itemize}
+
+Applied to traffic, these three axes suggest a reinterpretation of congestion. A jam is not simply ``reduced speed''; it is a low-persistence regime in which coherent flow has broken down and recovery has become difficult. The role of control is therefore not only to move vehicles faster in the moment, but to keep the traffic shell above a critical persistence threshold.
+
+This paper develops that idea using a simple corridor simulation. The goal is not to claim a finished transport-control theory, but to show that GEM can act as a practical control framework: one that maps naturally onto measurable traffic quantities and yields testable control logic.
+
+\section{GEM as a Practical Control Framework}
+
+GEM is not only a descriptive theory. It can also be interpreted as a control framework for systems whose objective is to maintain persistent coherent behaviour under stress.
+
+The general control logic is:
+\begin{equation}
+P = f(D,\kappa,\tau,\ldots),
+\end{equation}
+where \(P\) is a persistence score and the control problem is to keep
+\begin{equation}
+P > P_{\min}.
+\end{equation}
+
+The three axes provide an actionable language:
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Depth}: How much buffer remains before the system collapses into failure?
+    \item \textbf{Stiffness}: How strongly does the system resist small perturbations right now?
+    \item \textbf{Viscosity}: How quickly or slowly does the system recover after disruption?
+\end{itemize}
+
+This turns management from reactive crisis handling to proactive persistence engineering. Instead of waiting for breakdown and then reacting, the controller monitors the evolving state of the system and adjusts the relevant axis before collapse occurs. In this sense, GEM provides not merely a metaphor for resilience, but a candidate control grammar for resilient systems.
+
+\section{Traffic as a Coherence Shell for Vehicle Flow}
+
+A traffic corridor can be treated as a local coherence shell for vehicle flow. Within this shell, coherent motion persists only if the network remains sufficiently far from critical density, resists shock propagation, and recovers efficiently after disruption. The three GEM axes then acquire direct traffic interpretations.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Depth (\(D\))}: remaining capacity before a segment crosses into critical congestion.
+    \item \textbf{Stiffness (\(\kappa\))}: local flow stability, measured by low speed variance and resistance to braking-wave amplification.
+    \item \textbf{Viscosity (\(\tau\))}: congestion memory, measured by the time needed for a segment or corridor to clear after the original bottleneck is removed.
+\end{itemize}
+
+Under this mapping, congestion is reinterpreted as a loss of persistence. A corridor with low depth is close to overload. A corridor with low stiffness is easily destabilised by local perturbation. A corridor with high viscosity remains trapped in distorted stop-start states long after the triggering event has passed.
+
+The goal of control is therefore not merely to maximise instantaneous speed, but to preserve coherent flow above a critical threshold:
+\begin{equation}
+P_{\mathrm{traffic}} > P_{\min}.
+\end{equation}
+
+\section{A GEM-Inspired Traffic Controller}
+
+In the present toy model, each road segment is treated as a local persistence cell. The controller estimates the local state of each cell and then applies axis-specific interventions.
+
+\subsection{Local GEM Axes}
+
+At exploratory level, the traffic axes are defined as follows.
+
+\paragraph{Depth.}
+Depth is measured as the remaining margin before the local density reaches critical density:
+\begin{equation}
+D_i \sim \frac{\rho_{\mathrm{crit}} - \rho_i}{\rho_{\mathrm{crit}}},
+\end{equation}
+where \(\rho_i\) is the density in segment \(i\) and \(\rho_{\mathrm{crit}}\) is the critical density. When \(D_i\) becomes small, the segment is close to collapse into congestion.
+
+\paragraph{Stiffness.}
+Stiffness is associated with local shock resistance. In the simulation this is estimated from gradients in speed and density. Large spatial gradients indicate weak resistance to perturbation and therefore lower effective stiffness.
+
+\paragraph{Viscosity.}
+Viscosity is represented by a congestion-memory variable that accumulates when segments remain above critical density and decays only gradually once the segment becomes uncongested. High viscosity therefore corresponds to slow recovery and lingering stop-start behaviour.
+
+\subsection{Persistence Score}
+
+The local persistence score is defined schematically as
+\begin{equation}
+P_i
+=
+\left(D_i\right)^{a}
+\left(\kappa_i\right)^{b}
+\left(1-\tau_i\right)^{c},
+\end{equation}
+with the exponents set to unity in the present toy implementation for simplicity. The network-average persistence is then obtained by averaging \(P_i\) across segments.
+
+Although the present choice is schematic, it serves the essential purpose: low depth, low stiffness, or high viscosity push the corridor toward a low-persistence regime.
+
+\subsection{Control Actions}
+
+When local persistence drops, the controller does not apply a single generic response. Instead, it acts on the weakest axis.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Low depth:} the controller protects capacity margins through upstream ramp metering and selective demand throttling.
+    \item \textbf{Low stiffness:} the controller smooths flow through variable speed limits and upstream speed harmonisation.
+    \item \textbf{High viscosity:} the controller accelerates recovery through temporary downstream capacity support, interpreted here as shoulder-running or recovery-flush capacity.
+\end{itemize}
+
+The important conceptual point is that GEM control is not merely ``slowing traffic down when things look bad.'' Rather, it attempts to preserve persistence by applying the right intervention to the right axis. A corridor with low depth needs buffer protection; a corridor with low stiffness needs shock smoothing; a corridor with high viscosity needs faster dissipation of congestion memory.
+
+\section{Toy Corridor Simulation}
+
+To test this idea in minimal form, a one-dimensional corridor simulation was constructed. The road is discretised into linked segments with a fundamental-diagram-style flow rule, an upstream inflow, one on-ramp, and one or more incidents that reduce local capacity for a finite time.
+
+Two controllers are compared:
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item \textbf{Baseline control:} no GEM intervention beyond the ordinary corridor dynamics.
+    \item \textbf{GEM-inspired control:} adaptive speed harmonisation, ramp metering, and temporary downstream capacity support triggered by low persistence.
+\end{enumerate}
+
+The simulation is deliberately simple. It is intended as a proof-of-concept, not a realistic deployment model. The point is to test whether a persistence-based controller can exhibit the qualitative signature one would expect from GEM: lower congestion burden, smoother flow, and better recovery under disruption.
+
+\section{Evaluation Metrics}
+
+Average speed alone is not an adequate measure of persistence. A controller may slightly reduce speed in the short term while still improving overall resilience and recovery. For that reason, the toy study evaluates the corridor using a broader set of metrics.
+
+\subsection{Recovery Time}
+
+Recovery time is the strongest single metric. It measures how long the corridor takes to return to within \(5\%\) of its pre-incident downstream outflow, either from incident start or from incident end. In GEM terms, this is the clearest proxy for effective viscosity.
+
+\subsection{Variance and Stability}
+
+The standard deviation of corridor speed is measured during normal, incident, and post-incident phases. Lower variance corresponds to smoother flow and higher effective stiffness.
+
+\subsection{Cascade Failures}
+
+Secondary slowdown events are counted after the primary incident. These are interpreted as cascading coherence failures. A successful GEM controller should prevent or reduce such cascades by maintaining local shell coherence.
+
+\subsection{Total Throughput}
+
+Total downstream vehicles processed over the full simulation horizon provide a system-level measure of functional persistence. A persistence-preserving controller may sacrifice local speed transiently but still move more vehicles overall by reducing recovery loss.
+
+\subsection{Stop-Go Burden}
+
+The sum of absolute speed changes,
+\begin{equation}
+\sum |\Delta v|,
+\end{equation}
+is used as a simple proxy for stop-start energy burden. Lower values indicate smoother, more efficient flow and lower effective congestion memory.
+
+\subsection{Persistence Debt}
+
+A GEM-native metric is the cumulative time the corridor spends below the persistence threshold:
+\begin{equation}
+\mathrm{Persistence\ Debt}
+=
+\int \max(0, P_{\min} - \bar{P}(t))\,dt.
+\end{equation}
+This captures not only whether persistence was lost, but how long and how deeply the corridor remained in a degraded regime.
+
+\subsection{Jam Extent}
+
+The spatial extent of collapse is measured by the number of segments above critical density. This indicates whether disturbances remain local or spread into a corridor-wide coherence failure.
+
+\section{Results}
+
+Two scenarios were studied: a single-incident corridor and a multi-incident resilience scenario. In both cases the GEM-inspired controller was compared directly with the baseline.
+
+\subsection{Single-Incident Scenario}
+
+In the single-incident case, the GEM controller improved most practical metrics relative to baseline. Average speed increased modestly, while mean and peak congestion fell substantially. Total throughput increased, stop-go burden decreased markedly, and both maximum and mean jam extent were reduced. Speed variance also decreased in normal, incident, and post-incident phases.
+
+Recovery time, under the strict sustained-return criterion used here, was not reached by either controller within the simulated time horizon. However, the GEM controller still produced a corridor that was smoother, less congested, and less spatially spread than the baseline.
+
+\subsection{Multi-Incident Resilience Scenario}
+
+The multi-incident case provides the stronger test of GEM. Here the baseline remained trapped outside the recovery band, while the GEM-controlled corridor achieved measurable recovery. Average speed increased, average persistence rose, congestion burden fell strongly, total throughput improved, stop-go burden dropped, and jam extent was significantly reduced.
+
+This is the most important result of the note. A persistence framework should matter most when the system is repeatedly stressed, not merely during mild single incidents. In that setting, the GEM controller appears to degrade more gracefully and recover more effectively than the baseline.
+
+\subsection{Metrics Table}
+
+Table~\ref{tab:traffic_metrics} summarises the principal results from both scenarios.
+
+\begin{table}[h]
+\centering
+\caption{Comparison of baseline and GEM-controlled traffic performance in the toy corridor simulation.}
+\label{tab:traffic_metrics}
+\begin{tabular}{llcc}
+\toprule
+Scenario & Metric & Baseline & GEM \\
+\midrule
+Single incident & Average speed (km/h) & 77.08 & 79.14 \\
+Single incident & Average persistence & 0.253 & 0.254 \\
+Single incident & Mean congestion excess & 346.46 & 230.25 \\
+Single incident & Peak congestion excess & 749.80 & 554.46 \\
+Single incident & Recovery from incident end (min) & --- & --- \\
+Single incident & Speed std during incident & 3.28 & 2.49 \\
+Single incident & Total throughput (vehicles) & 1586.29 & 1672.20 \\
+Single incident & Stop-go burden & 2506.18 & 1901.49 \\
+Single incident & Persistence debt (hr) & 0.267 & 0.266 \\
+Single incident & Max jam extent (segments) & 15 & 13 \\
+\midrule
+Multi-incident & Average speed (km/h) & 79.06 & 80.71 \\
+Multi-incident & Average persistence & 0.223 & 0.230 \\
+Multi-incident & Mean congestion excess & 202.24 & 114.90 \\
+Multi-incident & Peak congestion excess & 370.04 & 240.53 \\
+Multi-incident & Recovery from incident end (min) & --- & 18.92 \\
+Multi-incident & Speed std during incident & 0.88 & 0.59 \\
+Multi-incident & Total throughput (vehicles) & 1691.50 & 1786.07 \\
+Multi-incident & Stop-go burden & 2750.52 & 1917.07 \\
+Multi-incident & Persistence debt (hr) & 0.297 & 0.290 \\
+Multi-incident & Max jam extent (segments) & 18 & 12 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The most GEM-relevant metrics are recovery time, congestion burden, throughput, stop-go burden, persistence debt, and jam extent. On these measures the controller performs especially well in the multi-incident case.
+
+\section{Plots and Companion Materials}
+
+The density heatmaps, average-speed traces, persistence trajectories, congestion curves, and control-action plots are provided as companion figures alongside this paper. The full simulation code is also provided as a companion file.
+
+The plots are intended to be read together with Table~\ref{tab:traffic_metrics}. The table provides numerical summary; the plots show how the persistence dynamics evolve over time and space. In particular, the heatmaps make it possible to see whether congestion remains local or spreads into corridor-wide failure, while the time-series plots reveal how quickly the controller stabilises the system after disruption.
+
+\section{Discussion}
+
+The toy results support the claim that GEM can function as a practical control language rather than merely a theoretical lens. In the traffic setting, the core idea is simple but powerful: coherent flow is maintained not by a single scalar optimisation rule, but by monitoring and adjusting three interacting axes of resilience, resistance, and recovery.
+
+This is useful because traffic is not always best understood as a throughput maximisation problem. A network that moves slightly fewer vehicles per minute in a calm phase may still be superior if it prevents long-lasting collapse after disruption. GEM therefore shifts the design goal from instantaneous efficiency to persistence-preserving control.
+
+The simulation also highlights an important feature of GEM. A good controller is not defined by one headline metric alone. Mean speed, for example, can be misleading. What matters is whether the system remains coherent, contains disturbances locally, avoids cascading loss of structure, and returns rapidly to stable behaviour. Those are precisely the conditions GEM was built to formalise.
+
+The present model remains highly simplified. It is a one-dimensional corridor, not a realistic multi-agent urban or motorway network. The persistence functional is schematic, the axis estimators are crude, and the control rules are manually designed rather than learned or optimised. Nevertheless, the note succeeds at its actual purpose: it demonstrates that GEM can be translated into an operational feedback controller and that the resulting controller exhibits plausible resilience-enhancing behaviour under stress.
+
+\section{Conclusion}
+
+This paper has presented an exploratory GEM-inspired framework for traffic control in which a road corridor is treated as a coherence shell for vehicle flow. Within this interpretation, congestion is recast as a loss of persistence, and control becomes the active maintenance of coherent flow above a critical threshold.
+
+A toy corridor simulation was used to compare baseline and GEM-inspired control in both single-incident and multi-incident settings. In the stronger multi-incident test, the GEM controller achieved measurable recovery where the baseline did not, while also reducing congestion burden, lowering stop-go behaviour, increasing throughput, and shrinking the spatial extent of jams. These are exactly the kinds of signatures one would expect from a persistence-preserving framework.
+
+The model is still preliminary, but it already makes a useful point: GEM is not confined to abstract metaphysics or cross-domain analogy. It can also be written as a practical control logic for systems whose primary problem is maintaining coherent behaviour under stress. In that sense, traffic is not an eccentric application of GEM. It is one of the clearest places where the framework becomes visibly operational.
+
+\begin{thebibliography}{9}
+
+\bibitem{GEM}
+P. Baldwin,
+\textit{General Emergence Mechanics: Persistence, Coherence Shells, and the Three Axes of Stable Existence},
+Zenodo.
+DOI: \url{https://doi.org/10.5281/zenodo.19783698}.
+
+\bibitem{polymer}
+P. Baldwin,
+\textit{A Toy GEM Polymer Fatigue Simulator},
+Zenodo.
+
+\bibitem{gravity}
+P. Baldwin,
+\textit{Toward a Gravitational Sector of General Emergence Mechanics},
+Zenodo.
+
+\end{thebibliography}
+
+\end{document}

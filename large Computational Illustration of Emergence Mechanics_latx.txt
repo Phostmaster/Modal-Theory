@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+
+\title{A Toy GEM Polymer Fatigue Simulator\\
+\large Computational Illustration of Emergence Mechanics}
+\author{Peter Baldwin}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note presents a simple computational toy model illustrating General Emergence Mechanics (GEM) in the domain of polymer fatigue under cyclic loading. The model maps the three GEM axes---depth, stiffness, and viscosity/relaxation time---onto measurable material behaviour and reproduces four distinct recovery/failure archetypes: brittle collapse, creeping distortion, trapped metastable states, and clean recovery. The results are qualitatively consistent with GEM’s central claim that different persistence regimes can arise from the same underlying dynamics through variation of the three coupled axes alone.
+\end{abstract}
+
+\section{Introduction}
+
+General Emergence Mechanics (GEM) treats stable structures as configurations that successfully persist inside a dynamical coherence shell. In this note, GEM is applied to a classic materials problem: polymer fatigue under repeated stress. The aim is not to provide a full materials-science model, but to show that the three core GEM axes---depth, stiffness, and viscosity---naturally generate distinct failure and recovery modes of the kind observed in real materials.
+
+\section{The Toy Model}
+
+We model the polymer as an overdamped system evolving in a nonlinear basin potential under cyclic loading:
+\[
+\gamma \dot{x} = -\frac{dV}{dx} + F_{\rm drive}(t),
+\]
+where \(V(x)\) is a quartic basin potential and \(F_{\rm drive}(t)\) is a sinusoidal driving term. Damage accumulates when deformation exceeds a threshold, and this damage feeds back into the effective stiffness and viscosity of the system.
+
+The three GEM axes are mapped as follows:
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Depth} controls the effective barrier to irreversible damage.
+    \item \textbf{Stiffness} controls the immediate restoring force.
+    \item \textbf{Viscosity} controls recovery lag and memory retention.
+\end{itemize}
+
+A persistence score \(P\) is computed at each timestep. Failure occurs when accumulated damage exceeds the remaining effective depth.
+
+\section{Results -- Quick Comparison of Archetypes}
+
+We ran four representative parameter sets corresponding to the main GEM regimes. The results are summarised below; full data, plots, and axis scans are provided in the companion repository.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Label & Depth & Stiffness & Viscosity & Classification \\
+\midrule
+brittle\_like     & 0.35 & 0.98 & 0.35 & brittle collapse \\
+creep\_like       & 0.75 & 0.25 & 0.65 & creeping distortion \\
+metastable\_like  & 1.00 & 0.60 & 1.25 & trapped metastable \\
+balanced          & 0.85 & 0.70 & 0.55 & clean recovery \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These four runs show that varying the three GEM axes alone is sufficient to generate qualitatively distinct behaviours under cyclic loading. In broad terms, the simulator reproduces the expected GEM-style archetypes:
+\begin{itemize}[leftmargin=1.5em]
+    \item high stiffness with low depth tends toward sudden brittle failure,
+    \item low stiffness with moderate-to-high viscosity tends toward creeping distortion,
+    \item high depth with high viscosity supports trapped metastable behaviour,
+    \item balanced parameters support clean recovery with minimal residual damage.
+\end{itemize}
+
+\section{Discussion}
+
+This toy model is deliberately minimal, yet it captures the essential GEM intuition: persistence is not mere passive duration, but a dynamical selection process governed by the interplay of depth, stiffness, and viscosity. Distinct failure and recovery modes emerge from the same basic equations when the three axes are varied.
+
+The model should not be read as a full physical description of polymer fatigue. Its purpose is narrower and more modest: to provide an explicit computational proof-of-concept showing that GEM-style persistence mechanics can generate recognisably different material regimes from a unified underlying structure.
+
+The full simulation code, plots, and parameter scans are provided in the accompanying repository.
+\noindent\textit{Note.} This simulator is a deliberately minimal toy model. It is not yet calibrated against real polymer fatigue data and should be read as a computational proof-of-concept for GEM-style persistence mechanics rather than as a quantitative materials model.
+
+\section{Conclusion}
+
+This computational demonstration shows that GEM’s three axes can generate realistic qualitative fatigue behaviours in a simple toy setting. It provides an early concrete example of persistence mechanics in action and offers a bridge between the abstract GEM framework and possible future materials modelling and experimental validation.
+
+\bigskip
+\noindent
+\textbf{Companion GEM paper:} \url{https://doi.org/10.5281/zenodo.19783698}
+
+
+
+\end{document}

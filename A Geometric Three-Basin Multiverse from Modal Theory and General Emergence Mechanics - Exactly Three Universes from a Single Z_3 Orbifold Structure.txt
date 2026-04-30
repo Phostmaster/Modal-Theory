@@ -1,0 +1,543 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\title{A Geometric Three-Basin Multiverse from Modal Theory and\\
+General Emergence Mechanics\\
+\large Exactly Three Universes from a Single Z$_3$ Orbifold Structure}
+\author{Peter Baldwin\\
+\small Independent Researcher\\
+\small peterbaldwin1000@gmail.com}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory (MT) and General Emergence Mechanics (GEM) together imply a natural
+and geometrically constrained multiverse structure. The Z$_3$ orbifold potential of MT
+produces exactly three degenerate vacuum basins prior to chiral symmetry breaking. The
+loop-suppressed bias term selects the $255^\circ$ minimum as the unique global attractor
+of our observable universe, but the remaining basins at $60^\circ$ and $180^\circ$ are not
+eliminated --- they are real features of the vacuum landscape. In GEM, each basin constitutes
+a distinct coherence shell with its own persistence threshold $P_{\min}$, relaxation timescale
+$\tau_{\mathrm{shell}}$, effective stiffness $\kappa_{\mathrm{eff}}$, and correlation length $\xi$.
+These differences imply distinct effective physics in each basin. Unlike string-theoretic
+landscape proposals, which permit vast and largely unconstrained numbers of vacua, the
+present framework predicts \textit{exactly three} universes, each fully determined by the
+same geometric structure that generates the fermion generational hierarchy, CP violation,
+and the arrow of time in our own universe. The inter-basin barriers correspond to infinite
+persistence-depth walls in GEM language, rendering direct observational access between
+basins impossible while preserving the full mathematical reality of all three. A refined
+ontological boundary is proposed: outside any given universe lies either sub-threshold
+excitations that fail to persist, or trans-basin structures that persist in a geometrically
+distinct vacuum.
+\end{abstract}
+
+\noindent\textbf{Keywords:} Modal Theory, General Emergence Mechanics, multiverse,
+Z$_3$ orbifold, vacuum basins, persistence threshold, emergent physics, coherence shell,
+cosmology, quantum gravity
+
+\bigskip
+\noindent\textit{Note.} This paper presents a theoretical derivation of multiverse structure
+from the existing MT/GEM framework. It does not claim observational confirmation of the
+additional basins, which by construction lie beyond the persistence boundary of our universe.
+
+\section{Introduction}
+
+The question of whether additional universes exist beyond our own has historically been
+treated either as untestable metaphysics or as an unavoidable consequence of specific
+theoretical frameworks such as eternal inflation or string theory. The string landscape
+\cite{Susskind2003} admits an estimated $10^{500}$ or more distinct vacua, rendering
+the multiverse effectively unconstrained and, critics argue, unfalsifiable.
+
+Modal Theory \cite{Baldwin2026MT} offers a radically different starting point. Its
+Z$_3$ orbifold structure produces not an arbitrary landscape but a geometrically
+constrained set of exactly three vacuum basins. The chiral bias term selects one as
+the preferred minimum of our universe. The other two are not artifacts or approximations
+--- they are real features of the same potential that generates our observable physics.
+
+General Emergence Mechanics \cite{Baldwin2026GEM} provides the language in which
+the consequences of this structure can be articulated. In GEM, each vacuum basin
+constitutes a coherence shell with its own dynamical properties. The persistence
+threshold $P > P_{\min}$ separates stable entities from transient excitations within
+any given shell. Between shells, the orbifold barriers constitute infinite-depth walls
+in persistence space.
+
+The result is a three-member multiverse that is:
+\begin{itemize}[leftmargin=1.5em]
+    \item \textit{Exactly constrained} --- three universes, no more, no less,
+    \item \textit{Fully geometric} --- each basin determined by the same Z$_3$ structure,
+    \item \textit{Internally consistent} --- each universe has self-consistent persistence mechanics,
+    \item \textit{Ontologically bounded} --- inter-basin access is forbidden by infinite depth barriers.
+\end{itemize}
+
+\section{The Z$_3$ Orbifold and Three Vacuum Basins}
+
+\subsection{The Symmetric Potential}
+
+The Modal Theory Lagrangian for the relative phase $\theta = \Delta\theta$ between
+the two scalar fields $\Phi_1$ and $\Phi_2$ is
+\begin{equation}
+\mathcal{L} = \frac{1}{2}(\partial_\mu\Phi_1)^2
++ \frac{1}{2}(\partial_\mu\Phi_2)^2
+- g_{\mathrm{mode}}\,\Phi_1\Phi_2\cos(\Delta\theta)
++ \lambda(\nabla\Delta\theta)^2,
+\end{equation}
+with $g_{\mathrm{mode}} = 4\pi G$. The Z$_3$ orbifold identification
+\begin{equation}
+\theta \;\sim\; \theta + \frac{2\pi}{3}
+\end{equation}
+forces the symmetric sector of the effective potential to depend only on $3\theta$,
+producing the pre-bias symmetric potential
+\begin{equation}
+V_{\mathrm{sym}}(\theta) = -g_{\mathrm{mode}}\cos(3\theta).
+\end{equation}
+This potential possesses three exactly degenerate global minima at
+\begin{equation}
+\theta = 60^\circ,\quad 180^\circ,\quad 300^\circ,
+\end{equation}
+related by the Z$_3$ symmetry $\theta \mapsto \theta + 120^\circ$.
+
+\subsection{Symmetry Breaking and Basin Selection}
+
+The loop-suppressed chiral bias term breaks the Z$_3$ degeneracy. The full effective
+potential is
+\begin{equation}
+V_{\mathrm{eff}}(\theta) = V_{\mathrm{sym}}(\theta) + \delta V_{\mathrm{chiral}}(\theta),
+\end{equation}
+where
+\begin{equation}
+\delta V_{\mathrm{chiral}}(\theta)
+\approx \kappa\,\rho_0^4\,B(\theta),
+\quad
+B(\theta) = -\sin\theta + \sqrt{3}\cos\theta,
+\end{equation}
+with $\kappa \sim y_{\mathrm{eff}}^4/(64\pi^2)$ generated at one loop. With
+$\kappa \ll g_{\mathrm{mode}}$, this bias is a small perturbation on the symmetric
+sector. It tilts the three wells, lifting two relative to one, and selects the unique
+global minimum at
+\begin{equation}
+\theta^\star = 255^\circ,
+\end{equation}
+which emerges dynamically rather than being imposed by hand \cite{Baldwin2026MT}.
+
+\subsection{The Relic Basins}
+
+The crucial observation for the present paper is this: the chiral bias lifts and tilts
+the three wells, but it does not destroy the other two. The basins at $60^\circ$ and
+$180^\circ$ remain as local minima of the effective potential --- metastable relic
+configurations of the vacuum landscape. Their persistence as local minima is
+protected by the orbifold barriers, which are large compared to the bias term:
+\begin{equation}
+\Delta V_{\mathrm{barrier}} \sim g_{\mathrm{mode}}\rho_0^4
+\;\gg\;
+\kappa\rho_0^4
+\;\sim\;
+\delta V_{\mathrm{chiral}}.
+\end{equation}
+The three basins are therefore not equally deep after symmetry breaking, but all
+three remain dynamically real.
+
+\section{Each Basin as a Distinct Universe}
+
+\subsection{GEM Shell Properties per Basin}
+
+In GEM \cite{Baldwin2026GEM}, the effective shell free energy near any local minimum
+$\theta_i$ is
+\begin{equation}
+F_i[\phi] = \int d^3x
+\left[
+\frac{1}{2}|\nabla\phi|^2 + V_i(\phi)
+\right],
+\end{equation}
+where $V_i(\phi)$ is the effective potential expanded around the $i$-th minimum. The
+local stiffness at each minimum is
+\begin{equation}
+\kappa_i = V_{\mathrm{eff}}''(\theta_i),
+\end{equation}
+and the characteristic relaxation timescale is
+\begin{equation}
+\tau_i = \frac{\gamma}{\kappa_i}.
+\end{equation}
+The correlation length governing spatial persistence is
+\begin{equation}
+\xi_i = \sqrt{\frac{\lambda}{\kappa_i}}.
+\end{equation}
+
+\subsection{Numerical Estimates of Basin Properties}
+
+The second derivatives of $V_{\mathrm{eff}}$ at the three minima can be estimated
+from the MT potential structure. At the symmetric level,
+$V_{\mathrm{sym}}''(\theta) = 9g_{\mathrm{mode}}\cos(3\theta)$,
+evaluated at the three symmetric minima gives:
+\begin{align}
+V_{\mathrm{sym}}''(60^\circ) &= 9g_{\mathrm{mode}}\cos(180^\circ) = -9g_{\mathrm{mode}}, \\
+V_{\mathrm{sym}}''(180^\circ) &= 9g_{\mathrm{mode}}\cos(540^\circ) = -9g_{\mathrm{mode}}, \\
+V_{\mathrm{sym}}''(300^\circ) &= 9g_{\mathrm{mode}}\cos(900^\circ) = -9g_{\mathrm{mode}}.
+\end{align}
+These are the symmetric-sector curvatures at the pre-bias minima. The bias
+term and gradient stiffness shift these values, with the $255^\circ$ minimum
+acquiring a small positive curvature as shown in MT v10 \cite{Baldwin2026v10}:
+\begin{equation}
+\kappa_{255^\circ} \approx \Lambda^4(1 + 288\epsilon) > 0.
+\end{equation}
+The relic basins at $60^\circ$ and $180^\circ$ acquire different curvatures
+under the bias perturbation, producing inequivalent shell properties. From
+the instanton path analysis of the Z$_3$ flavour sector \cite{Baldwin2026Z3},
+the effective curvatures at the relic minima are estimated as:
+\begin{equation}
+\kappa_{60^\circ} \approx 9.2\,g_{\mathrm{mode}}\rho_0^4,
+\quad
+\kappa_{180^\circ} \approx 9.0\,g_{\mathrm{mode}}\rho_0^4,
+\quad
+\kappa_{255^\circ} \approx \Lambda^4(1+288\epsilon).
+\end{equation}
+These inequivalent curvatures imply distinct relaxation timescales, correlation
+lengths, and persistence thresholds in each basin --- and therefore distinct
+effective physics.
+
+\subsection{Table of Basin Properties}
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{lccc}
+\toprule
+Property & Basin $60^\circ$ & Basin $180^\circ$ & Basin $255^\circ$ (ours) \\
+\midrule
+Vacuum phase $\theta_i$ & $60^\circ$ & $180^\circ$ & $255^\circ$ \\
+$\cos\theta_i$ & $+0.500$ & $-1.000$ & $-0.2588$ \\
+Relative depth & Lifted & Intermediate & Deepest (global min) \\
+Effective stiffness $\kappa_i$ & $\sim 9.2\,g_{\mathrm{mode}}\rho_0^4$ &
+$\sim 9.0\,g_{\mathrm{mode}}\rho_0^4$ & $\Lambda^4(1+288\epsilon)$ \\
+Relaxation time $\tau_i$ & Shorter & Intermediate & Our $\tau_{\mathrm{shell}}$ \\
+Correlation length $\xi_i$ & Smaller & Intermediate & Our $\xi$ \\
+Persistence threshold & Higher & Intermediate & Our $P_{\min}$ \\
+CP analogue & $\cos 60^\circ = +0.500$ & $\cos 180^\circ = -1.000$ &
+$\cos 255^\circ \approx -0.259$ \\
+\bottomrule
+\end{tabular}
+\caption{Comparative shell properties of the three MT vacuum basins.
+Each basin constitutes a geometrically distinct universe with self-consistent
+persistence mechanics. The $255^\circ$ basin is the unique global minimum
+selected by the chiral bias and is identified with our observable universe.}
+\end{table}
+
+\section{Implications of Distinct Basin Physics}
+
+\subsection{Different Effective Constants}
+
+In MT, the emergent physical constants of our universe --- the fine-structure
+constant $\alpha^{-1} \approx 137$, the CP violation parameter
+$\varepsilon_{\mathrm{CP}} \approx \cos(255^\circ) \approx -0.259$, the
+baryon asymmetry $\eta \approx 6.1\times10^{-10}$, and the fermion mass
+hierarchy --- all depend explicitly on the vacuum phase angle $\theta^\star = 255^\circ$.
+
+In a universe occupying the $60^\circ$ basin, the analogous quantities would be
+determined by $\theta = 60^\circ$. The CP analogue would be
+$\cos(60^\circ) = +0.500$ rather than $-0.259$: a universe with a
+\textit{positive} CP-like phase and a qualitatively different matter-antimatter
+balance. In the $180^\circ$ basin, $\cos(180^\circ) = -1.000$: maximal CP-like
+violation, and a universe with significantly different baryon asymmetry.
+
+The fine-structure analogue in each basin would follow the same geometric
+derivation as in our universe but evaluated at the respective vacuum angle,
+yielding different effective electromagnetic coupling strengths and therefore
+different atomic physics, chemistry, and ultimately different conditions for
+complexity.
+
+\subsection{Different Arrow of Time}
+
+In GEM, the arrow of time emerges from the directional relaxation of the
+coherence shell toward the preferred vacuum minimum. The rate of this
+relaxation is governed by $\tau_{\mathrm{shell}} = \gamma/\kappa_{\mathrm{eff}}$.
+
+In the $60^\circ$ and $180^\circ$ basins, different stiffness values
+$\kappa_i$ produce different relaxation timescales. Time --- as directional
+shell relaxation --- flows at a different rate in each universe. This is not
+merely a coordinate rescaling: the Lyapunov descent
+\begin{equation}
+\frac{dF_i}{dt} = -\gamma\int d^3x\left(\frac{\partial\phi}{\partial t}\right)^2 \leq 0
+\end{equation}
+proceeds at a rate set by $\kappa_i$, which differs between basins.
+Each universe has its own temporal rhythm, emerging from the same
+dissipative mechanism but at a basin-specific pace.
+
+\subsection{Different Persistence Conditions for Complexity}
+
+The persistence threshold $P_{\min}$ in each basin is set by the local
+shell depth, stiffness, and relaxation structure. A shallower or stiffer
+basin may support fewer stable configurations --- a smaller set of
+persistent entities. The richness of chemistry, biology, and ultimately
+observers depends on how many distinct stable configurations the persistence
+threshold admits.
+
+Our $255^\circ$ basin appears to be the global minimum --- the deepest
+well. This suggests it may support the richest persistence landscape: the
+widest range of stable configurations, the most complex chemistry, the
+greatest biological diversity. The other basins, being shallower, may
+support less complex persistent structures --- or none at all recognisable
+to us.
+
+This provides a GEM-native anthropic principle: we find ourselves in the
+$255^\circ$ basin not because it was arbitrarily selected, but because it
+is the deepest basin, supporting the richest persistence conditions under
+which observers can arise.
+
+\section{The Inter-Basin Boundary in GEM Language}
+
+\subsection{Orbifold Walls as Infinite Depth Barriers}
+
+In GEM, the persistence depth $D$ measures the energy barrier to escape the
+local coherence shell. The orbifold barriers separating the three basins are
+large compared to the bias term:
+\begin{equation}
+\Delta V_{\mathrm{barrier}} \sim g_{\mathrm{mode}}\rho_0^4
+\;\gg\;
+\kappa\rho_0^4.
+\end{equation}
+In GEM depth language, these barriers constitute effectively infinite
+persistence-depth walls between the three basins. No configuration
+persistent within one basin can tunnel to another under ordinary conditions,
+because doing so would require crossing a depth barrier far exceeding the
+shell's characteristic relaxation energy.
+
+This is the GEM account of why the other universes are inaccessible: not
+because they are spatially distant, but because they lie on the other side
+of an infinite persistence-depth boundary. The inter-basin wall is the
+deepest possible GEM barrier.
+
+\subsection{A Refined Ontological Boundary}
+
+In GEM v4 \cite{Baldwin2026GEM}, the boundary of our universe was
+characterised as follows:
+
+\begin{quote}
+\textit{Outside the universe is that which fails to persist long enough
+to become a thing.}
+\end{quote}
+
+The three-basin structure requires a refinement. There are now two
+distinct kinds of ``outside'':
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item \textbf{Sub-threshold outside}: configurations within our basin
+    that fail to satisfy $P > P_{\min}$. These are virtual-like excitations,
+    transient distortions of our vacuum phase that do not persist long
+    enough to acquire stable identity. They are real at the level of local
+    phase displacement but not observable as stable entities.
+
+    \item \textbf{Trans-basin outside}: configurations that persist stably
+    in a different vacuum basin. These are not sub-threshold --- they may
+    be fully persistent within their own shell --- but they are separated
+    from our universe by an infinite depth barrier. They exist with full
+    ontological standing in their own basin but are completely inaccessible
+    from ours.
+\end{enumerate}
+
+The refined ontological statement is therefore:
+
+\begin{quote}
+\textit{Outside our universe lies either that which fails to persist
+long enough to become a thing, or that which persists in a geometrically
+distinct vacuum basin, separated from ours by an infinite persistence-depth
+wall.}
+\end{quote}
+
+\section{Comparison with Existing Multiverse Proposals}
+
+\subsection{String Theory Landscape}
+
+The string landscape \cite{Susskind2003} admits an enormous and essentially
+unconstrained number of vacua --- estimates range from $10^{500}$ to
+vastly larger numbers. The physical constants in each vacuum are determined
+by the compactification geometry, which is not uniquely fixed by the theory.
+This has been criticised as rendering the framework non-predictive:
+with sufficiently many vacua, any observed value of any constant can be
+``explained'' anthropically.
+
+The MT three-basin multiverse is categorically different. The number of
+basins is exactly three, fixed by the Z$_3$ orbifold symmetry. The
+properties of each basin are fully determined by the same geometric
+structure that fixes our own physical constants. There is no free landscape
+to scan.
+
+\subsection{Eternal Inflation}
+
+Eternal inflation \cite{Guth2007} produces a multiverse of bubble universes
+through repeated nucleation events in an inflating background. The number
+of bubble universes is infinite, and the measure problem --- how to assign
+probabilities to observations across infinitely many universes --- remains
+unsolved.
+
+The MT framework requires no inflationary mechanism and no measure problem.
+The three basins exist as features of a single compact potential, and the
+selection of our basin by the chiral bias is a deterministic dynamical
+outcome, not a probabilistic nucleation event.
+
+\subsection{Many Worlds}
+
+The Everett many-worlds interpretation \cite{Everett1957} produces a
+continuously branching multiverse through quantum measurement. The branches
+share the same physical laws and constants but differ in their histories.
+
+The MT three-basin universes are not branches of the same history --- they
+are geometrically distinct vacua with different effective constants, different
+arrows of time, and different persistence conditions. They are ontologically
+prior to any branching structure.
+
+\section{Falsifiability and Observational Constraints}
+
+By construction, the other basins are separated from ours by infinite
+persistence-depth barriers. Direct observation of the $60^\circ$ or
+$180^\circ$ universes is therefore impossible within the framework. This
+might appear to render the proposal unfalsifiable.
+
+However, the three-basin structure makes several indirect predictions that
+are testable within our universe:
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item \textbf{Exactly three fermion generations}: The same Z$_3$ structure
+    that produces three vacuum basins produces three and only three fermion
+    generations via the geometric seesaw mechanism \cite{Baldwin2026Z3}.
+    This is already consistent with observation. A fourth generation would
+    falsify the Z$_3$ structure and with it the three-basin multiverse.
+
+    \item \textbf{No additional vacuum selection}: If the bias term is
+    correctly derived from one-loop physics, the $255^\circ$ minimum should
+    be the unique global attractor. Evidence of competing vacuum selection
+    or a different preferred angle would constrain or falsify the framework.
+
+    \item \textbf{Relic imprints}: The relic basins at $60^\circ$ and
+    $180^\circ$ leave signatures in our universe through the instanton
+    paths connecting them to the $255^\circ$ minimum. These paths generate
+    the fermion mass hierarchy and mixing angles. Precision measurements
+    of CKM and PMNS matrices therefore constitute indirect tests of the
+    three-basin structure.
+
+    \item \textbf{No fifth force or new long-range interaction}: The
+    inter-basin barriers are large. No residual long-range coupling between
+    basins is predicted. Any observed fifth force would need to be
+    accommodated within the single-basin structure.
+\end{enumerate}
+
+\section{Discussion}
+
+The three-basin multiverse emerging from MT/GEM is the most economical
+multiverse proposal in the existing literature. It requires no new
+assumptions beyond those already present in the MT/GEM framework, predicts
+an exact and finite number of additional universes, and connects that
+number to an independently motivated feature of our own physics --- the
+three fermion generations.
+
+The GEM language makes the ontological structure precise. Each universe is
+a coherence shell with its own persistence threshold, relaxation timescale,
+and effective stiffness. The boundaries between universes are infinite
+depth barriers. The richness of each universe's physics is set by its
+persistence conditions.
+
+Several open questions remain. The precise physical constants of the $60^\circ$
+and $180^\circ$ universes --- their analogues of $\alpha$, fermion masses,
+and cosmological parameters --- require detailed calculation from the MT
+potential evaluated at those angles. Whether those basins support sufficient
+persistence complexity for chemistry or biology is an open question that
+follows from those calculations.
+
+The deeper question --- whether the other basins are occupied, in the
+sense of containing persistent structures analogous to matter --- is not
+yet answerable within the present framework. The basins exist as dynamical
+features of the vacuum. Whether they contain persistent entities depends
+on whether their initial conditions admitted the formation of stable
+configurations above their respective persistence thresholds. This is
+a cosmological question that requires the full dynamical history of each
+basin to resolve.
+
+\section{Conclusion}
+
+Modal Theory's Z$_3$ orbifold structure implies exactly three vacuum
+basins. General Emergence Mechanics provides the language in which each
+basin constitutes a geometrically distinct universe with its own coherence
+shell, persistence threshold, relaxation timescale, and effective physics.
+The chiral bias term selects the $255^\circ$ basin as our universe --- the
+unique global minimum and, plausibly, the basin with the richest persistence
+conditions for complexity.
+
+The other two universes, at $60^\circ$ and $180^\circ$, are separated from
+ours by infinite persistence-depth barriers. They are ontologically real
+within the framework but permanently inaccessible. Their physical constants
+differ from ours in calculable ways determined by the same geometric
+structure that fixes our own.
+
+This is a multiverse of exactly three members, fully determined, geometrically
+derived, and connected to testable predictions within our own universe. It
+is the minimal multiverse consistent with the Z$_3$ structure of MT --- and,
+we suggest, the most economical multiverse proposal currently available.
+
+\begin{thebibliography}{99}
+
+\bibitem{Baldwin2026MT}
+P.~Baldwin,
+\textit{Modal Theory: Self-Consistent Geometric-Dynamical Closure of a
+Two-Scalar EFT with a Unique $255^\circ$ Attractor},
+Zenodo (2026). DOI: \href{https://doi.org/10.5281/zenodo.18756261}{10.5281/zenodo.18756261}
+
+\bibitem{Baldwin2026GEM}
+P.~Baldwin,
+\textit{General Emergence Mechanics: Persistence, Coherence Shells, and
+the Three Axes of Stable Existence},
+Zenodo (2026). DOI: \href{https://doi.org/10.5281/zenodo.19756838}{10.5281/zenodo.19756838}
+
+\bibitem{Baldwin2026v10}
+P.~Baldwin,
+\textit{Modal Theory v10: Precision Geometric Closure},
+Zenodo (2026). DOI: \href{https://doi.org/10.5281/zenodo.18145492}{10.5281/zenodo.18145492}
+
+\bibitem{Baldwin2026Z3}
+P.~Baldwin,
+\textit{The Z$_3$-Orbital Phase Space as a Flavor Generator:
+Deriving Fermion Hierarchy and Mixing Geometrically},
+Zenodo (2026).
+
+\bibitem{Baldwin2026Grav}
+P.~Baldwin,
+\textit{Toward a Gravitational Sector of General Emergence Mechanics},
+Zenodo (2026). DOI: \href{https://doi.org/10.5281/zenodo.19843738}{10.5281/zenodo.19843738}
+
+\bibitem{Susskind2003}
+L.~Susskind,
+\textit{The Anthropic Landscape of String Theory},
+arXiv:hep-th/0302219 (2003).
+
+\bibitem{Guth2007}
+A.~H.~Guth,
+\textit{Eternal Inflation and its Implications},
+J.\ Phys.\ A \textbf{40}, 6811 (2007).
+
+\bibitem{Everett1957}
+H.~Everett~III,
+\textit{Relative State Formulation of Quantum Mechanics},
+Rev.\ Mod.\ Phys.\ \textbf{29}, 454 (1957).
+
+\bibitem{Jacobson1995}
+T.~Jacobson,
+\textit{Thermodynamics of Spacetime: The Einstein Equation of State},
+Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+
+\bibitem{Verlinde2011}
+E.~Verlinde,
+\textit{On the Origin of Gravity and the Laws of Newton},
+JHEP \textbf{04}, 029 (2011).
+
+\end{thebibliography}
+
+\end{document}
+

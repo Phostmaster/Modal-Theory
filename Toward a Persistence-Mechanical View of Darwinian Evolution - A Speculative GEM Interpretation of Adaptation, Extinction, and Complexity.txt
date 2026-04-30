@@ -1,0 +1,137 @@
+\documentclass{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\title{Toward a Persistence-Mechanical View of Darwinian Evolution\\
+\large A Speculative GEM Interpretation of Adaptation, Extinction, and Complexity}
+\author{Peter Baldwin}
+\date{April 30, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper explores a speculative mechanism for evolution based on the principles of General Emergence Mechanics (GEM), treating biological persistence as a central driver of evolutionary change. In GEM, stable structures arise from the interplay of depth, stiffness, and viscosity within a coherence shell. We propose that evolution may be viewed as the exploration of this persistence space, with random mutation acting as perturbation and natural selection acting as a filter for coherence. Within this picture, major evolutionary events such as mass extinctions and biodiversity explosions may be reinterpreted as large-scale shifts in persistence thresholds under environmental change, rather than solely in terms of competitive ``tooth and claw'' dynamics. The framework is exploratory and is presented as a set of hypotheses rather than established results, but it offers a mechanically structured way of thinking about complexity, extinction, speciation, and convergent evolution in terms of persistent biological configurations.
+\end{abstract}
+
+\noindent\textbf{Keywords:} General Emergence Mechanics, GEM, Darwinian evolution, persistence mechanics, natural selection, mutation, extinction, speciation, complexity, convergent evolution, biological stability
+
+\tableofcontents
+
+\section{Introduction}
+
+Darwinian evolution, as conventionally understood, rests on random mutation and natural selection. This framework has enormous explanatory power, but it does not by itself provide a simple mechanical account of why complexity sometimes increases over long periods, why major evolutionary transitions cluster in bursts, or why some forms recur across very different lineages. The usual response is that traits persist because they aid survival, but this can leave the deeper question open: what determines whether a biological configuration is mechanically able to persist in the first place?
+
+This paper proposes a speculative alternative lens based on General Emergence Mechanics (GEM), in which stability arises from persistence within a dynamical coherence shell. On this view, evolution may be interpreted as the exploration of biological persistence space, governed by depth (robustness), stiffness (adaptability), and viscosity (recovery time). The aim is not to replace Darwinian theory, but to recast some of its large-scale patterns in explicitly mechanical terms.
+
+The proposal is intentionally exploratory. If it proves useful, it may offer a new way of thinking about why life tends, under some conditions, toward greater structural complexity and why evolutionary history contains both catastrophic collapses and rapid expansions. If not, it remains a worthwhile intellectual experiment.
+
+\section{Persistence Mechanics in Evolution}
+
+In this speculative framework, evolution is recast as the dynamics of a biological coherence shell: a space in which traits, organisms, or lineages persist only if they maintain sufficient coherence against environmental pressures. The three GEM axes are interpreted biologically as follows:
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Depth (\(D\))}: the robustness of a trait or lineage to external shocks, analogous to an energy barrier against environmental disruption.
+    \item \textbf{Stiffness (\(\kappa\))}: the speed and effectiveness of adaptive response, determining how quickly traits react to perturbation.
+    \item \textbf{Viscosity (\(\tau\))}: the recovery time from disturbance, governing memory, lag, and persistence of altered states.
+\end{itemize}
+
+A schematic persistence functional may then be written as
+\[
+P
+=
+\Theta
+\left(\frac{D}{D_0}\right)^a
+\left(\frac{\kappa}{\kappa_0}\right)^b
+\left(\frac{\tau}{\tau_0}\right)^c
+\exp\left(-\frac{\text{environmental gradient}^2}{\epsilon^2}\right),
+\]
+where traits or lineages with \(P>P_{\min}\) persist, while those falling below threshold decay or disappear.
+
+Environmental change acts as a gradient on this biological shell, perturbing the persistence landscape and shifting which configurations remain viable. Random mutation is interpreted as stochastic exploration of that landscape, while natural selection becomes the effective persistence filter: survival of the coherent.
+
+\section{Mechanisms of Evolutionary Dynamics}
+
+\subsection{Random Mutation and Persistence Exploration}
+
+In GEM terms, random mutation corresponds to stochastic perturbation of the biological shell, testing nearby configurations in persistence space:
+\[
+\frac{d\,\text{Trait}}{dt}
+=
+-\gamma \nabla F[\text{Trait}] + \xi(t),
+\]
+where \(\xi(t)\) represents mutational noise. Under this interpretation, evolution explores nearby basins of possible persistence, with successful traits settling into deeper and more stable regions of the landscape. Periods of strong environmental change increase the effective gradient and may therefore increase exploration pressure.
+
+\subsection{Natural Selection as a Coherence Filter}
+
+Natural selection may then be reinterpreted as the application of a persistence threshold:
+\[
+P > P_{\min} \implies \text{Trait persists}.
+\]
+On this picture, selection is not discarded, but given a more explicit mechanical role. Environmental shifts alter the local persistence conditions, thereby favouring some configurations and eliminating others.
+
+\subsection{Speciation and Biodiversity Events}
+
+Speciation appears in this framework as bifurcation into distinct persistence basins under changing environmental constraints. The Cambrian Explosion, for example, may be interpreted as entry into a high-dimensional persistence landscape in which many low-viscosity, rapidly diversifying trait configurations became simultaneously viable.
+
+\subsection{Extinction and the Great Dyings}
+
+Extinction events are interpreted as large-scale failures of persistence:
+\[
+P < P_{\min} \implies \text{Extinction}.
+\]
+In this picture, major environmental shifts reduce effective depth or distort the persistence landscape so severely that formerly viable lineages fall below threshold. Mass extinction is therefore understood as shell collapse on a global or semi-global scale.
+
+\section{Implications for Evolutionary Theory}
+
+\subsection{Why Complexity Sometimes Increases}
+
+GEM suggests that complexity may increase when deeper persistence basins also support richer internal structure. On this view, evolution trends toward complexity not because complexity is inevitable, but because some higher-dimensional configurations offer more robust persistence under changing conditions. Complexity is then not an independent goal of evolution, but a side effect of the search for deeper and more stable biological basins.
+
+\subsection{Ageing and Death}
+
+Ageing may be interpreted as cumulative coherence degradation, with increasing \(\tau\) slowing recovery and amplifying the retention of damage. Death is then the final collapse of biological persistence below \(P_{\min}\), the point at which the organism can no longer maintain coherent recovery.
+
+\subsection{Convergent Evolution}
+
+Convergent evolution is naturally interpreted as different lineages finding the same deep persistence basin under similar environmental pressures. What appears as repeated ``design'' in nature is, on this view, repeated discovery of the same mechanically stable solution.
+
+\section{Testable Predictions and Falsifiability}
+
+The GEM-style evolutionary picture suggests several broad predictions:
+
+\begin{itemize}[leftmargin=1.5em]
+    \item major extinction events should correlate with large environmental gradients that reduce effective depth,
+    \item bursts of biodiversity should occur in regimes with low effective viscosity and access to many viable basins,
+    \item ageing rates should correlate with changes in biological recovery timescales,
+    \item convergent evolution should preferentially occur where the persistence landscape strongly favours a small number of deep configurations.
+\end{itemize}
+
+If fossil, ecological, or genetic data fail to show any meaningful relationship to these predictions, the framework should be revised or rejected. Its value therefore lies not only in interpretation but in falsifiability.
+
+\section{Conclusion}
+
+This exploratory framework reframes evolution as a form of persistence mechanics, offering a fresh lens on adaptation, complexity, extinction, and convergence. On this view, evolution is not merely a story of competition and selection, but a broader process in which life explores mechanically viable configurations within a shifting persistence landscape.
+
+The proposal is speculative, and it does not claim to replace Darwinian theory. Rather, it offers a complementary mechanical language that may help clarify why certain evolutionary patterns recur so strikingly across deep time. If this language proves useful, it may suggest new ways of linking biological change to the general problem of how stable organised systems persist in a changing world. If not, it remains, at the very least, a lively and enjoyable thought experiment.
+
+\begin{thebibliography}{9}
+
+\bibitem{GEM}
+P. Baldwin,
+\textit{General Emergence Mechanics: Persistence, Coherence Shells, and the Three Axes of Stable Existence},
+Zenodo.
+DOI: \url{https://doi.org/10.5281/zenodo.19783698}.
+
+\end{thebibliography}
+
+\end{document}
