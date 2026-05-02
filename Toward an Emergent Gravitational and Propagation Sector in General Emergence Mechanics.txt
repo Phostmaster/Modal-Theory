@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\title{Toward an Emergent Gravitational and Propagation Sector in General Emergence Mechanics\\
+\large Persistence Depth, Shell Causal Speed, Refractive Gravity, and Weak-Field Schwarzschild Structure}
+\author{Peter Baldwin}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper develops a unified weak-field programme for gravity and propagation in General Emergence Mechanics (GEM). The central proposal is that persistent physical structure exists within a dynamical coherence shell whose local depth modulates both restoring behaviour and signal propagation. Starting from an effective shell Lagrangian, we identify a natural shell propagation speed \(c_{\rm shell}^2 = \lambda/\chi\), where \(\lambda\) is the spatial gradient stiffness and \(\chi\) is the temporal inertia coefficient. We then introduce a class of depth-weighted effective potentials for which the local curvature at the preferred minimum gives a depth-dependent stiffness \(\kappa_{\rm eff}(x) = D(x)\) in a natural normalisation. Promoting the response coefficients to depth-dependent functions yields a variable propagation structure, from which Newtonian-like attraction follows through a refractive or travel-time argument. A further weak-field extension with separate temporal and spatial response functions yields a Schwarzschild-like metric form, providing a route to gravitational redshift and the full weak-field light-bending structure. The paper does not claim a completed derivation of Einstein's field equations or of the exact numerical value of the speed of light. Rather, it organises a mathematically explicit and internally connected programme in which gravity and propagation emerge from the same persistence structure.
+\end{abstract}
+
+\noindent\textbf{Keywords:} General Emergence Mechanics, GEM, emergent gravity, coherence shell, propagation speed, refractive gravity, persistence depth, weak-field metric, gravitational redshift, light bending
+
+\bigskip
+\noindent\textit{Note.} This paper presents an exploratory weak-field framework rather than a finished gravitational theory. Its goal is to formalise the strongest currently available routes from shell dynamics to propagation and gravity.
+
+\tableofcontents
+
+\section{Introduction}
+
+General Emergence Mechanics (GEM) approaches stable existence through persistence rather than through geometry alone. In GEM, long-lived structures remain viable only when they stay coherent inside a dynamical shell governed by depth, stiffness, and relaxation (viscosity). 
+
+The present paper focuses on a specific possibility: that the same shell structure responsible for persistence may also determine both the characteristic speed of coherent propagation and the weak-field behaviour ordinarily attributed to gravity. In this picture, gravity is not assumed first as a force or curvature law. Instead, one asks whether local shell depth can simultaneously modify restoring behaviour and propagation structure, giving rise to Newtonian-like attraction and weak-field Schwarzschild features as emergent consequences.
+
+\section{The Effective Shell Lagrangian}
+
+Near the preferred phase minimum, the effective shell Lagrangian takes the form
+\[
+\mathcal{L} = \frac{\chi}{2}(\partial_t \phi)^2 - \frac{\lambda}{2}(\nabla \phi)^2 - V(\phi),
+\]
+where \(\phi\) is the phase field with preferred minimum at \(\phi_0 = 255^\circ\), \(\chi\) is the temporal inertia coefficient, \(\lambda\) is the spatial gradient stiffness, and \(V(\phi)\) stabilises the preferred shell phase.
+
+Linearising around the preferred minimum gives the wave equation
+\[
+\chi \partial_t^2 \delta\phi - \lambda \nabla^2 \delta\phi + \kappa_{\rm eff} \delta\phi = 0,
+\]
+with dispersion relation
+\[
+\omega^2 = \frac{\lambda}{\chi} k^2 + \frac{\kappa_{\rm eff}}{\chi}.
+\]
+
+In the long-wavelength limit the phase velocity approaches the shell propagation speed
+\[
+\boxed{c_{\rm shell}^2 = \frac{\lambda}{\chi}}.
+\]
+
+This is the first key result: GEM naturally contains a characteristic causal speed with the correct formal role to be compared with the observed speed of light.
+
+\section{Depth-Weighted Effective Potentials and Local Stiffness}
+
+To let persistence depth modulate local response, consider depth-weighted effective potentials of the form
+\[
+V(\phi, D(x)) = D(x) \, U(\phi - \phi_0),
+\]
+where \(U\) is a dimensionless local potential shape. A concrete quartic example is
+\[
+V(\phi, D(x)) = \frac{D(x)}{2} (\phi - \phi_0)^2 + \frac{\alpha}{4} D(x) (\phi - \phi_0)^4 + \cdots.
+\]
+
+The local effective stiffness at the minimum is then
+\[
+\kappa_{\rm eff}(x) = \left. \frac{\partial^2 V}{\partial \phi^2} \right|_{\phi=\phi_0} = D(x)
+\]
+in the natural normalisation where \(U''(0) = 1\).
+
+Thus, in this class of depth-weighted potentials, deeper regions are locally stiffer in direct proportion to persistence depth. This gives a true spatially varying stiffness:
+\[
+\boxed{\kappa_{\rm eff}(x) = D(x)}.
+\]
+
+##{Depth-Dependent Propagation Structure}
+
+Promoting the response coefficients to depth-dependent functions yields a local propagation speed
+\[
+c_{\rm shell}^2(D) = \frac{\lambda(D)}{\chi(D)}.
+\]
+
+For weak depth variations \(D(x) = D_0 + \delta D(x)\), this induces a spatially varying propagation speed, providing a natural route to refractive or travel-time interpretations of gravitational attraction.
+
+\section{Newtonian-Like Attraction from Refractive Propagation}
+
+A useful weak-field route treats the shell as an inhomogeneous medium with refractive index
+\[
+n(x) = \frac{c_0}{c_{\rm shell}(x)}.
+\]
+
+Rays extremise travel time according to Fermat’s principle. If deeper regions correspond to reduced local propagation speed (higher refractive index), trajectories bend toward them, yielding Newtonian-like attraction in the weak-field limit.
+
+\section{Effective Metric from Split Response Functions}
+
+To capture gravitational redshift and the full weak-field light-bending structure, distinguish temporal and spatial response functions explicitly. Consider the weak-field effective metric ansatz
+\[
+ds^2 = -A(D)\, dt^2 + B(D)\, d\mathbf{x}^2.
+\]
+
+For weak depth variations this can be expanded to recover the standard isotropic weak-field Schwarzschild form
+\[
+ds^2 \approx -\left(1 + \frac{2\Phi}{c_0^2}\right) dt^2 + \left(1 - \frac{2\Phi}{c_0^2}\right) d\mathbf{x}^2,
+\]
+including the characteristic factor of two in light deflection.
+
+\section{Conclusion}
+
+This paper has assembled a unified weak-field GEM programme in which propagation speed, local stiffness, and gravitational behaviour all emerge from persistence structure within the coherence shell. The main results are:
+- A natural shell causal speed \(c_{\rm shell}^2 = \lambda/\chi\),
+- Depth-dependent local stiffness \(\kappa_{\rm eff}(x) = D(x)\),
+- Newtonian-like attraction from depth-modulated propagation structure,
+- Weak-field Schwarzschild-like behaviour from split temporal and spatial response functions.
+
+The broader conceptual implication is that internal structure and external dynamics may not be governed by separate principles. They may instead be different expressions of a single persistence architecture. In that sense, gravity is not added to the shell from outside. It is one of the ways the shell behaves when persistence varies across itself.
+
+Future work will focus on rigorous derivations from the microscopic MT/GCF action, numerical simulations of depth-gradient dynamics, and confronting the predictions with observational data.
+
+\end{document}
