@@ -1,0 +1,309 @@
+Internal Pitch Note
+Multi-Observable Phase Selection Test for the 255° Candidate Basin
+Purpose
+
+This note outlines a possible experimental-surrogate route for testing whether a preferred phase near 255° can be selected by simultaneous consistency across multiple observables, even if a closed-form first-principles derivation remains incomplete.
+
+The aim is not to claim that 255° has already been proven.
+The aim is to define a structured phase-selection stress test that could, in principle, be explored numerically, in analogue models, and eventually in laboratory systems.
+
+The core idea is simple:
+
+If a broad scan over candidate phase angles shows that multiple otherwise distinct observables all become best-behaved inside one narrow basin near 255°, then that angle gains support as a closure-selected attractor surrogate rather than an arbitrarily chosen parameter.
+
+This would not be a theorem.
+But it would be a serious and falsifiable multi-observable closure-selection result.
+
+1. Scan Window
+
+The proposed angle scan is:
+
+210
+∘
+→300
+∘
+
+This range is chosen because:
+
+it is wide enough to avoid trivial cherry-picking,
+it includes the baseline displaced region around the 240
+∘
+ minimum,
+it comfortably contains the candidate 255
+∘
+ basin,
+and it allows comparison against nearby competing candidate angles.
+
+A practical implementation would likely use:
+
+a coarse scan first, for example every 2
+∘
+ or 5
+∘
+,
+followed by a fine scan around the strongest candidate basin, for example every 0.25
+∘
+ or 0.5
+∘
+.
+2. Target Basin Idea
+
+The working hypothesis is not that one observable alone selects the preferred phase.
+Rather, the hypothesis is that there exists a narrow admissible basin in angle space where multiple independent diagnostics all become simultaneously well-behaved.
+
+This means the target is not simply “the best angle” under one metric.
+The target is:
+
+a narrow basin rather than a broad plateau,
+showing coincidence across multiple observables,
+with enough sharpness to distinguish it from neighbouring angles,
+and enough robustness to survive modest changes in weighting or modelling assumptions.
+
+In this framework, 255° would be favoured not because it is imposed, but because it is the only region in which a wide set of closure conditions can be jointly satisfied.
+
+3. Observable Set
+
+The current candidate observable set is:
+
+RG dressing quality
+Relic width stability
+Overlap hierarchy
+CP proxy phase
+Current anisotropy
+Chemistry smoothness metrics
+
+These are intended to represent structurally different sectors of the framework rather than repeated versions of the same diagnostic.
+
+4. What Each Observable Is Meant to Indicate
+4.1 RG dressing quality
+
+This is meant to indicate whether the candidate phase remains well-behaved under scale flow or coarse-graining.
+
+Questions:
+
+Does the phase remain stable under dressing?
+Does it behave like a true attractor rather than a fragile local minimum?
+Do effective couplings remain controlled near this angle?
+
+A strong result here would support the idea that the candidate phase is not only locally selected, but also scale-stable.
+
+4.2 Relic width stability
+
+This is meant to indicate whether the candidate angle produces a narrow and stable residual basin rather than a diffuse or unstable remnant.
+
+Questions:
+
+Is the basin width well-defined?
+Does the width remain stable under perturbation?
+Does the candidate avoid runaway broadening or collapse?
+
+A strong result would suggest that the phase produces a physically meaningful remnant structure rather than a numerically accidental point.
+
+4.3 Overlap hierarchy
+
+This is meant to indicate whether the angle generates a well-ordered hierarchy of overlap or coupling strengths, rather than a confused or inverted structure.
+
+Questions:
+
+Do expected ordering relations hold?
+Is the hierarchy smooth rather than erratic?
+Does the angle preserve the intended dominance structure?
+
+A strong result here would support internal structural consistency.
+
+4.4 CP proxy phase
+
+This is meant to track whether the candidate angle aligns with the intended direction and magnitude of effective asymmetry in the model.
+
+Questions:
+
+Does the phase generate the correct sign of asymmetry?
+Is the proxy consistent with the intended chiral structure?
+Does it remain smooth across nearby angles?
+
+A strong result would support the idea that the candidate phase is linked to coherent asymmetry rather than arbitrary displacement.
+
+4.5 Current anisotropy
+
+This is meant to indicate whether directional transport or response behaves in a stable and interpretable way near the candidate angle.
+
+Questions:
+
+Is anisotropy controlled and non-pathological?
+Does the angle produce a preferred directional structure without instability?
+Is the effect measurable in analogue systems?
+
+A strong result would make the candidate phase more physically accessible.
+
+4.6 Chemistry smoothness metrics
+
+This is meant to indicate whether the candidate angle produces smooth rather than jagged or discontinuous behaviour in chemistry-linked structural metrics.
+
+Questions:
+
+Are the associated chemical or overlap-like response functions smooth?
+Does the angle avoid abrupt pathological transitions?
+Does it favour stable structured behaviour?
+
+A strong result here would help bridge the closure story into chemistry / materials analogues.
+
+5. What Success Would Look Like
+
+Success would require more than “255° scores well.”
+
+It would require:
+
+A. Narrowness
+
+A clear and limited basin, not a broad vague region.
+
+B. Coincidence
+
+Multiple observables peaking, minimising, stabilising, or smoothing in nearly the same angular neighbourhood.
+
+C. Sharpness
+
+A basin that is visibly more structured than nearby alternatives.
+
+D. Robustness
+
+The result should survive:
+
+modest weighting changes,
+scan-resolution changes,
+reasonable modelling perturbations,
+and leave-one-out checks in which one observable is temporarily removed.
+E. Transparency
+
+The result should be visible both:
+
+in individual observable plots,
+and in a composite closure score.
+
+The strongest case would be a narrow basin near 255° that remains preferred even when one observable at a time is removed from the composite.
+
+6. Suggested Scoring Method
+
+A practical route would be:
+
+Define each observable clearly.
+State whether it should be:
+minimised,
+maximised,
+stabilised,
+flattened,
+or sharpened.
+Normalise each observable so they lie on comparable scales.
+
+Build a composite closure score
+
+C(θ)=
+i
+∑
+	​
+
+w
+i
+	​
+
+Q
+i
+	​
+
+(θ)
+
+where Q
+i
+	​
+
+(θ) are normalised goodness functions.
+
+Plot both:
+the individual observable curves,
+and the total closure score.
+
+This would produce an explicit angle-selection landscape rather than a verbal argument.
+
+7. Candidate Analogue Systems
+
+The eventual experimental route would likely require a physical system that supports:
+
+phase selection,
+local stiffness or rigidity,
+directional bias,
+measurable anisotropy,
+and scale-dependent stability.
+
+Possible analogue classes include:
+
+7.1 Coupled oscillator arrays
+
+Useful for:
+
+phase locking,
+attractor selection,
+and narrow basin testing.
+7.2 Nonlinear metamaterials
+
+Useful for:
+
+anisotropic response,
+engineered boundary conditions,
+and directional stability tests.
+7.3 Photonic or waveguide systems
+
+Useful for:
+
+phase transport,
+interference structure,
+and mode-shaping.
+7.4 Condensed-matter phase systems
+
+Useful for:
+
+stiffness analogues,
+local minima under perturbation,
+and possible current anisotropy proxies.
+7.5 Structured chemical or reaction-diffusion systems
+
+Potentially useful for:
+
+smoothness metrics,
+gradient-based basin selection,
+and chemistry-linked response tests.
+
+The first goal would not be to reproduce the full theory in the lab, but to identify a surrogate system in which angle-dependent multi-observable phase selection can be measured at all.
+
+8. Why This Is Worth Testing
+
+This programme offers a middle path between:
+
+claiming a complete first-principles derivation too early,
+and abandoning the 255° question as purely formal.
+
+The proposed scan does not prove the angle by elegance alone.
+Instead, it asks whether a narrow candidate basin is selected by simultaneous consistency across multiple structurally distinct diagnostics.
+
+If the answer is yes, then 255° becomes a serious closure-selection candidate.
+If the answer is no, then the framework is constrained or falsified in a useful way.
+
+That makes this a real research problem rather than a decorative number hunt.
+
+9. Summary
+
+The working proposal is:
+
+scan the angle range 210
+∘
+→300
+∘
+,
+track a bundle of distinct closure-relevant observables,
+identify whether a narrow basin near 255° is uniquely favoured,
+and treat that result as a multi-observable closure-selection surrogate rather than a closed-form derivation.
+
+If successful, this would provide a disciplined basis for:
+
+further numerical work,
+analogue-system testing,
+and possible university collaboration around measurable phase-selection proxies.

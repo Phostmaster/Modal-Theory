@@ -1,0 +1,145 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\title{Toward an Independent Closure Derivation of the 255\(^\circ\) Attractor in GEM}
+\author{Peter Baldwin}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note presents the clearest current formulation of the 255\(^\circ\) attractor problem in General Emergence Mechanics (GEM). The effective phase free energy is decomposed into four parts: a \(Z_3\)-symmetric orbifold term, a geometric chiral-bias term, a coherence-stiffness term, and a residual closure sector. Within this structure, a perturbative expansion around the baseline \(240^\circ\) minimum yields the conditional shift formula
+\[
+\delta = \frac{\lambda(\theta_0 - 4\pi/3)}{9\lambda_3 - 2k + \lambda}.
+\]
+The remaining open task is to derive the reference phase \(\theta_0\) and the stiffness \(\lambda\) independently from the full admissible free-energy landscape rather than inserting them phenomenologically. The note does not claim a completed first-principles proof of the 255\(^\circ\) lock. Rather, it clarifies the effective structure of the problem and states precisely what the closure programme must still achieve for the attractor to become a true output of the theory.
+\end{abstract}
+
+\noindent\textbf{Keywords:} General Emergence Mechanics, GEM, closure sector, coherence stiffness, orbifold symmetry, chiral bias, 255\(^\circ\) attractor, phase locking
+
+\section{Introduction}
+
+One of the central open questions in the development from Modal Theory to GEM is whether the phase attractor at \(255^\circ\) can be derived as a genuine output of the theory rather than inserted as a stabilising assumption. The purpose of this note is to state the current best version of that problem in a mathematically explicit and honest form.
+
+The key issue is not whether a stiffness term \emph{can} stabilise a minimum near \(255^\circ\). That much is straightforward. The real issue is whether the preferred phase centre \(\theta_0\) and the coherence stiffness \(\lambda\) can both be obtained independently from the full admissible free-energy landscape. If they can, then the 255\(^\circ\) lock becomes a derived feature. If they cannot, then the attractor remains a phenomenological closure ansatz.
+
+This note therefore has a limited aim. It does not claim to complete the derivation. It clarifies the effective structure of the problem and identifies the independent closure derivation of \(\theta_0\) and \(\lambda\) as the true remaining task.
+
+\section{Effective Free Energy Decomposition}
+
+The coarse-grained phase free energy is written as
+\begin{equation}
+F_{\rm eff}(\theta)
+= F_{Z_3}(\theta)
++ F_{\rm bias}(\theta)
++ F_{\rm stiff}(\theta)
++ F_{\rm closure}(\theta).
+\label{eq:Feff}
+\end{equation}
+
+The individual terms are:
+\paragraph{1. \(Z_3\)-symmetric orbifold term}
+\[
+F_{Z_3}(\theta) = -\lambda_3 \cos(3\theta),
+\]
+which provides the baseline threefold minima at \(0^\circ\), \(120^\circ\), \(240^\circ\).
+
+\paragraph{2. Geometric chiral-bias term}
+\[
+F_{\rm bias}(\theta) = -k (\cos\theta + \sqrt{3} \sin\theta).
+\]
+
+\paragraph{3. Coherence-stiffness term}
+\[
+F_{\rm stiff}(\theta) = \frac{\lambda}{2} (\theta - \theta_0)^2,
+\]
+where \(\lambda > 0\) is the effective phase rigidity and \(\theta_0\) is the closure-selected reference phase.
+
+\paragraph{4. Closure sector}
+\[
+F_{\rm closure}(\theta),
+\]
+which encodes residual fluctuation effects, orbifold mode-sum corrections, and vacuum-amplitude contributions.
+
+Equation \eqref{eq:Feff} is the essential structural statement. The 255\(^\circ\) problem concerns the full admissible balance of all four terms.
+
+\section{Coherence Stiffness}
+
+The stiffness \(\lambda\) arises from integrating out fast fluctuations around the locked vacuum. Schematically,
+\[
+\lambda = \lambda(\rho_0, \Lambda_{\rm orb}, g_{\rm mode}, \dots) \approx \rho_0^2 \Lambda_{\rm orb}^2 \cdot \mathcal{G}(g_{\rm mode}).
+\]
+Physically, \(\lambda\) represents the shell’s resistance to phase distortion — the effective elasticity of the phase-locked vacuum.
+
+\section{Perturbative Shift from the Baseline Minimum}
+
+We expand around the baseline \(Z_3\) minimum at \(\theta = 4\pi/3\):
+\[
+\theta = \frac{4\pi}{3} + \delta, \qquad |\delta| \ll 1.
+\]
+
+To first order the stationarity condition yields
+\[
+(9\lambda_3 - 2k + \lambda)\delta + \lambda\left(\frac{4\pi}{3} - \theta_0\right) = 0.
+\]
+
+Solving for the shift gives
+\[
+\boxed{
+\delta = \frac{\lambda(\theta_0 - 4\pi/3)}{9\lambda_3 - 2k + \lambda}.
+}
+\]
+
+This is the central perturbative result. It shows explicitly how a displaced closure-selected phase centre \(\theta_0\) and finite stiffness \(\lambda\) would shift the baseline minimum.
+
+\section{The Remaining Closure Task}
+
+The real unfinished task is to derive \(\theta_0\) and \(\lambda\) independently from the full admissible free-energy landscape (vacuum amplitude \(\rho_0\), orbifold mode sum, and fluctuation averaging).
+
+The working closure hypothesis is that, in the physically relevant regime, this procedure selects
+\[
+\theta_0 = \frac{4\pi}{3} + \frac{\pi}{12} = 255^\circ.
+\]
+
+If confirmed by explicit closure, the 15\(^\circ\) shift is not an arbitrary input but the natural outcome of the geometric-dynamical machinery.
+
+\section{Conceptual Upgrade}
+
+The main conceptual advance is this:
+\[
+\theta_0 \text{ and } \lambda \text{ are not free parameters to be chosen.}
+\]
+They are coordinates of the deepest admissible coherence basin.
+
+The 255\(^\circ\) lock, if ultimately established, should emerge because it is stationary, locally stable, and compatible with the vacuum amplitude and orbifold structure — not because it was inserted by hand.
+
+\section{What Has and Has Not Been Shown}
+
+What \emph{has} been shown:
+- The correct effective free-energy structure of the closure problem,
+- The perturbative mechanism by which a displaced centre shifts the baseline minimum,
+- The precise role played by stiffness and chiral bias.
+
+What has \emph{not} yet been shown:
+- A fully explicit analytic derivation of \(\lambda\),
+- A fully explicit analytic derivation of \(\theta_0 = 255^\circ\),
+- A complete closed-form expression for \(F_{\rm closure}\).
+
+This note therefore does not claim a final proof. It clarifies the best current machinery and states exactly what remains to be done.
+
+\section{Conclusion}
+
+The 255\(^\circ\) attractor problem can now be stated more cleanly. The effective free energy is naturally decomposed into \(Z_3\)-symmetric, chiral-bias, coherence-stiffness, and closure sectors. The perturbative shift formula shows how a closure-selected reference phase would displace the baseline \(240^\circ\) minimum.
+
+The key unresolved issue is no longer hidden: \(\theta_0\) and \(\lambda\) must still be derived independently from the full admissible free-energy landscape. Until that is done, the 255\(^\circ\) lock remains a strong candidate output of closure rather than a finished first-principles theorem.
+
+This formulation turns the 255\(^\circ\) question into a clear research programme rather than an unresolved assertion.
+
+\end{document}

@@ -1,0 +1,411 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{Emergence of Spinorial Structure from Chiral Vacuum Transport\\
+\large with Explicit SU(2) Double-Cover Holonomy}
+\author{Peter Baldwin}
+\date{18 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note explores a geometric route by which spinorial matter structure may arise within a Global Constraint Framework (GCF). In standard relativistic quantum theory, spinors enter through the representation theory of the Lorentz group, with the familiar double-cover property that a spinorial state changes sign under a $2\pi$ rotation and returns to itself only after a $4\pi$ rotation. Here we investigate whether this topological signature can be motivated by coherent transport through a structured chiral vacuum.
+
+The proposal is deliberately conservative. We do not claim a complete derivation of fermionic quantum field theory or the spin-statistics theorem. Instead, we show that if the admissible vacuum has both a discrete structural baseline and a continuous chiral twist, then local state transport is naturally represented by a two-component object acted on by an $SU(2)$ transport holonomy. The minimal double-cover transport operator is
+\[
+U(\phi)=\exp\left(-\frac{i}{2}\phi\,\bm{n}\cdot\bm{\sigma}\right),
+\]
+where $\bm{\sigma}$ are the Pauli matrices. This gives
+\[
+U(2\pi)=-I,\qquad U(4\pi)=+I,
+\]
+which is precisely the spinorial double-cover signature.
+
+In this formulation, the two-component Weyl spinor is interpreted as the minimal transport object required to track chiral vacuum orientation. Relativistic mass then couples left- and right-chiral transport sectors, yielding the four-component Dirac object. The result is not a replacement for the standard Lorentz-group derivation of spinors, but a geometric reconstruction showing how spinorial topology is naturally compatible with, and potentially motivated by, chiral vacuum admissibility.
+\end{abstract}
+
+\section{Motivation}
+
+Previous work within the Global Constraint Framework has shown that if admissible matter evolution is required to preserve coherent phase transport, and if one further imposes first-order relativistic closure, then the Dirac equation arises as the natural linear relativistic matter equation. In that route, the Clifford algebra follows from the requirement that a first-order Hamiltonian square to the relativistic dispersion relation,
+\[
+E^2 = p^2 + m^2.
+\]
+
+That argument explains why the Dirac form is structurally natural once a first-order coherent matter equation has been assumed. However, it leaves open a deeper geometric question:
+
+\begin{quote}
+Why should the transported matter object be spinorial in the first place?
+\end{quote}
+
+In standard quantum theory, spinors are introduced through the representation theory of rotations and the Lorentz group. This is mathematically rigorous, but it treats the spinor primarily as an abstract representation-theoretic object. The purpose of the present note is to provide a complementary geometric motivation: spinorial structure may be understood as the minimal transport structure required for coherent propagation through a vacuum possessing chiral topology.
+
+We therefore ask whether the $4\pi$ return property of spinors can be interpreted as the macroscopic signature of transport through a bipartite, chiral admissibility geometry.
+
+\section{Structured Vacuum and Bipartite Transport}
+
+In a featureless scalar vacuum, a local excitation can be described by a single phase-like degree of freedom. Transport from one point to another is then trivial up to an ordinary scalar phase.
+
+However, in a structurally closed vacuum, the background need not be featureless. In the Modal Theory / GCF setting, the admissible vacuum is naturally associated with:
+
+\begin{enumerate}
+\item a discrete structural baseline, such as a $Z_3$ or hexagonal phase skeleton;
+\item a chiral asymmetry or twist, represented at the transport level by a $Z_2$-type orientation distinction.
+\end{enumerate}
+
+A local excitation moving through such a vacuum must track more than one datum. It must preserve coherent information about:
+
+\begin{enumerate}
+\item its phase relative to the structural baseline;
+\item its orientation relative to the chiral twist.
+\end{enumerate}
+
+A single real scalar amplitude is therefore not the most natural local transport object. The minimal object capable of tracking a binary chiral orientation while preserving coherent phase transport is a two-component complex vector.
+
+We write this local transport object as
+\[
+\psi =
+\begin{pmatrix}
+u \\
+v
+\end{pmatrix}.
+\]
+
+At this stage, $\psi$ should be interpreted as a transport doublet rather than as a fully quantized fermionic field. The claim is not yet that all spinor quantum field theory has been derived, but that a chiral vacuum geometry naturally motivates a two-component state space.
+
+\section{The Minimal Chiral Transport Space}
+
+The two-component space carries the fundamental representation of $SU(2)$. The generators of this representation are the Pauli matrices,
+\[
+\sigma_x =
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix},
+\qquad
+\sigma_y =
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix},
+\qquad
+\sigma_z =
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}.
+\]
+
+They satisfy
+\[
+[\sigma_i,\sigma_j]=2i\epsilon_{ijk}\sigma_k,
+\]
+and
+\[
+\{\sigma_i,\sigma_j\}=2\delta_{ij}I.
+\]
+
+The $SU(2)$ generators are therefore
+\[
+J_i=\frac{1}{2}\sigma_i.
+\]
+
+A rotation by angle $\phi$ about a unit axis $\bm{n}$ is represented on the transport doublet by
+\[
+U(\phi,\bm{n})
+=
+\exp\left(-i\phi\,\bm{n}\cdot\bm{J}\right)
+=
+\exp\left(-\frac{i}{2}\phi\,\bm{n}\cdot\bm{\sigma}\right).
+\]
+
+This is the central mathematical object of the present note. It is the minimal holonomy operator for coherent transport in a two-component chiral state space.
+
+\section{Explicit Double-Cover Derivation}
+
+We now show explicitly that this transport law has the spinorial $4\pi$ return property.
+
+Let
+\[
+N \equiv \bm{n}\cdot\bm{\sigma}.
+\]
+
+Using the Pauli algebra and $\bm{n}\cdot\bm{n}=1$, one has
+\[
+N^2 = I.
+\]
+
+Therefore the exponential can be evaluated exactly:
+\[
+U(\phi,\bm{n})
+=
+\exp\left(-\frac{i}{2}\phi N\right)
+=
+\cos\left(\frac{\phi}{2}\right)I
+-
+i\sin\left(\frac{\phi}{2}\right)N.
+\]
+
+For a full $2\pi$ rotation,
+\[
+U(2\pi,\bm{n})
+=
+\cos(\pi)I
+-
+i\sin(\pi)N.
+\]
+
+Since
+\[
+\cos(\pi)=-1,\qquad \sin(\pi)=0,
+\]
+we obtain
+\[
+U(2\pi,\bm{n})=-I.
+\]
+
+Thus, after a $2\pi$ rotation, the two-component transport object does not return to its original state. It returns to its negative.
+
+For a $4\pi$ rotation,
+\[
+U(4\pi,\bm{n})
+=
+\cos(2\pi)I
+-
+i\sin(2\pi)N.
+\]
+
+Since
+\[
+\cos(2\pi)=1,\qquad \sin(2\pi)=0,
+\]
+we obtain
+\[
+U(4\pi,\bm{n})=+I.
+\]
+
+Therefore the state returns to itself only after a $4\pi$ rotation:
+\[
+\psi \xrightarrow{2\pi} -\psi,
+\qquad
+\psi \xrightarrow{4\pi} \psi.
+\]
+
+This is exactly the defining double-cover behaviour of spinorial structure.
+
+\section{Interpretation as Vacuum Transport Holonomy}
+
+The above result is standard as a statement about $SU(2)$ spinors. The GCF interpretation adds a geometric reading.
+
+If the vacuum contains a chiral transport distinction, then a local excitation must carry an internal orientation relative to that chiral structure. A physical $2\pi$ spatial rotation returns the excitation to the same external coordinate orientation, but the internal chiral transport frame has traversed only one sheet of the double-cover structure. The state therefore acquires a minus sign.
+
+A second $2\pi$ rotation completes the internal chiral transport cycle. Only after $4\pi$ does the state return to both:
+
+\begin{enumerate}
+\item its original external spatial orientation;
+\item its original internal chiral alignment.
+\end{enumerate}
+
+The $4\pi$ return condition is therefore not treated here as an arbitrary algebraic oddity. It is interpreted as the holonomy signature of a two-sheeted chiral transport space.
+
+In this language, the spinor is the minimal local state object whose transport is compatible with a vacuum that possesses chiral admissibility structure.
+
+\section{Relation to $SO(3)$ and the Double Cover}
+
+The ordinary three-dimensional rotation group is $SO(3)$. Its elements describe rotations of vectors in physical space. However, $SO(3)$ is not simply connected. Its simply connected double cover is $SU(2)$:
+\[
+SU(2) \longrightarrow SO(3).
+\]
+
+The map is two-to-one:
+\[
+U \quad \text{and} \quad -U
+\]
+correspond to the same physical rotation in $SO(3)$.
+
+This means that a $2\pi$ rotation is already the identity in $SO(3)$, but it corresponds to $-I$ in $SU(2)$. A $4\pi$ rotation is required to return to $+I$ in $SU(2)$.
+
+The present proposal is that a chiral vacuum transport structure naturally selects the double-cover description rather than the single-cover vector description. In other words, matter transport follows the topology of $SU(2)$ because the admissibility geometry of the vacuum is itself effectively double-sheeted at the chiral transport level.
+
+\section{Chiral Weyl Doublets}
+
+The two-component transport object can now be identified with the structure of a Weyl spinor.
+
+A left-chiral doublet is written
+\[
+\psi_L =
+\begin{pmatrix}
+u_L \\
+v_L
+\end{pmatrix},
+\]
+and a right-chiral doublet as
+\[
+\psi_R =
+\begin{pmatrix}
+u_R \\
+v_R
+\end{pmatrix}.
+\]
+
+In the present interpretation, $\psi_L$ and $\psi_R$ represent transport objects aligned with opposite chiral orientations of the vacuum.
+
+For a massless excitation, a single chiral sector can propagate independently. This is consistent with the standard Weyl equation, where left- and right-handed spinors decouple in the massless limit.
+
+Thus, the Weyl spinor is interpreted as the minimal coherent transport object for a massless excitation moving along one chiral rail of the vacuum.
+
+\section{Mass and Coupling of Opposite Chiral Sectors}
+
+A massive excitation cannot remain confined to one chiral transport rail. Mass mixes left- and right-chiral sectors.
+
+In standard relativistic spinor theory, the Dirac equation in chiral form couples two Weyl spinors:
+\[
+i\sigma^\mu \partial_\mu \psi_R = m\psi_L,
+\]
+\[
+i\bar{\sigma}^\mu \partial_\mu \psi_L = m\psi_R,
+\]
+where
+\[
+\sigma^\mu=(I,\bm{\sigma}),
+\qquad
+\bar{\sigma}^\mu=(I,-\bm{\sigma}).
+\]
+
+The four-component Dirac spinor is then
+\[
+\Psi =
+\begin{pmatrix}
+\psi_L \\
+\psi_R
+\end{pmatrix}.
+\]
+
+In the GCF interpretation, mass represents the requirement that coherent propagation negotiate both chiral orientations of the vacuum. A massive object is therefore not described by a single chiral doublet, but by the coupled pair of left- and right-handed transport doublets.
+
+The four-component Dirac object is thus interpreted as the minimal transport structure for massive relativistic matter in a chiral admissibility geometry.
+
+\section{Connection to Dirac Closure}
+
+The previous GCF reconstruction of the Dirac equation proceeded from the following logic:
+
+\begin{enumerate}
+\item admissible matter evolution should preserve coherent phase transport;
+\item coherent matter evolution motivates a first-order local evolution law;
+\item relativistic closure requires the square of the Hamiltonian to reproduce
+\[
+E^2=p^2+m^2;
+\]
+\item the unique linear factorisation of this closure condition yields the Clifford algebra;
+\item the covariant Dirac equation follows:
+\[
+(i\gamma^\mu\partial_\mu-m)\Psi=0.
+\]
+\end{enumerate}
+
+The present note supplies a geometric complement to that argument. It explains why the local matter object entering the first-order relativistic equation is naturally spinorial: the chiral vacuum transport space is represented minimally by an $SU(2)$ doublet, and mass couples the two chiral doublets into a Dirac spinor.
+
+Thus the two arguments fit together:
+
+\[
+\text{chiral vacuum transport}
+\quad\Longrightarrow\quad
+SU(2)\text{ doublet}
+\quad\Longrightarrow\quad
+\text{Weyl spinor},
+\]
+and
+\[
+\text{massive relativistic closure}
+\quad\Longrightarrow\quad
+\psi_L\oplus\psi_R
+\quad\Longrightarrow\quad
+\text{Dirac spinor}.
+\]
+
+\section{Coupling to Gauge Transport}
+
+Once local phase comparison is nontrivial, ordinary derivatives must be replaced by covariant derivatives:
+\[
+\partial_\mu \longrightarrow D_\mu.
+\]
+
+For a $U(1)$ phase connection,
+\[
+D_\mu = \partial_\mu + igA_\mu.
+\]
+
+The Dirac equation becomes
+\[
+(i\gamma^\mu D_\mu - m)\Psi=0.
+\]
+
+This provides the natural joining point between the matter-side transport argument and the gauge-connection argument. Spinorial structure describes the local chiral transport object, while the gauge connection describes the admissible comparison of local phase frames across spacetime.
+
+Together they produce the standard low-energy Dirac--Maxwell structure:
+\[
+(i\gamma^\mu D_\mu-m)\Psi=0,
+\]
+\[
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu.
+\]
+
+The GCF interpretation is that both structures arise from the same underlying requirement: local physics must preserve global admissibility under coherent transport.
+
+\section{What Has and Has Not Been Shown}
+
+It is important to state the scope precisely.
+
+\subsection*{What has been shown}
+
+\begin{itemize}
+\item A chiral transport background naturally motivates a two-component local state object.
+\item The minimal two-component transport law is represented by an $SU(2)$ holonomy.
+\item The $SU(2)$ transport operator satisfies
+\[
+U(2\pi)=-I,\qquad U(4\pi)=+I,
+\]
+giving the spinorial double-cover signature explicitly.
+\item A massless excitation may be represented by a single Weyl doublet.
+\item A massive excitation requires coupling of left- and right-chiral doublets, naturally giving a four-component Dirac object.
+\item The argument complements the previous relativistic-closure route to the Dirac equation.
+\end{itemize}
+
+\subsection*{What has not been shown}
+
+\begin{itemize}
+\item A complete derivation of the spin-statistics theorem.
+\item A full quantisation of the transport doublet into fermionic creation and annihilation operators.
+\item A derivation of anticommutation relations from the vacuum topology alone.
+\item A unique microscopic derivation of the exact $Z_2$ chiral transport coordinate from a fully specified field configuration.
+\item A complete derivation of the full Standard Model fermion representation content.
+\end{itemize}
+
+Therefore this note should be read as a geometric reconstruction and motivation for spinorial topology, not as a complete derivation of fermionic quantum field theory.
+
+\section{Conclusion}
+
+The existence of spinorial matter can be given a natural geometric interpretation within a Global Constraint Framework.
+
+If the vacuum is not a featureless background but a chiral admissibility structure, then local coherent transport requires a two-component object capable of tracking internal chiral orientation. The minimal transport holonomy on this doublet is an $SU(2)$ operator,
+\[
+U(\phi,\bm{n})=
+\exp\left(-\frac{i}{2}\phi\,\bm{n}\cdot\bm{\sigma}\right),
+\]
+which immediately yields
+\[
+U(2\pi)=-I,\qquad U(4\pi)=+I.
+\]
+
+This is the defining double-cover behaviour of spinors.
+
+A massless excitation may remain in a single chiral transport sector, giving a Weyl spinor. A massive excitation must couple opposite chiral sectors, giving the four-component Dirac object. When combined with first-order relativistic closure, this leads naturally to the Dirac equation.
+
+The result is modest but structurally significant. Spinorial structure need not be viewed only as an abstract algebraic input. It can also be interpreted as the transport signature of a chiral, bipartite vacuum geometry. In this sense, local matter structure, like gauge connection structure, may be understood as arising from the admissibility topology of the vacuum.
+
+\end{document}

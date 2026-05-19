@@ -1,0 +1,330 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,longtable}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+
+\title{Falsifiability Conditions for General Emergence Mechanics:\\
+Phase Sweep, Hysteresis Sharpening, and Structural Observable Translation}
+\author{Peter Baldwin}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+General Emergence Mechanics (GEM) is only scientifically useful if it makes experimentally vulnerable claims. This note proposes a near-term falsification programme based on ordinary laboratory infrastructure but non-ordinary structural interpretation. The central test is a phase-angle sweep over the range \(210^\circ \rightarrow 300^\circ\), with particular attention to whether a narrow candidate basin emerges near \(255^\circ\). The strongest predicted signature is not mere hysteresis-loop displacement, but loop sharpening: steeper switching walls, reduced branch roughness, reduced cycle-to-cycle variance, and improved structural coherence within a narrow phase window. Ferroelectric materials are proposed as the benchmark substrate, while engineered anisotropic composites are proposed as a second-lane amplifier platform. An appendix provides a translation layer from standard observables such as phase, noise, hysteresis, and recovery into GEM-style structural proxies. The purpose of this paper is not to claim prior validation, but to identify where GEM can fail clearly and quickly.
+\end{abstract}
+
+\noindent\textbf{Keywords:} General Emergence Mechanics, GEM, falsifiability, phase sweep, hysteresis, ferroelectrics, basin selection, admissibility, structural observables
+
+\section{Introduction}
+
+A theoretical framework earns seriousness not by how much it claims to explain, but by how clearly it permits itself to fail. The purpose of the present note is therefore not to defend General Emergence Mechanics (GEM) against criticism, but to identify a small number of places where it can be made experimentally vulnerable.
+
+The specific motivation is the unresolved closure problem surrounding a candidate narrow basin near \(255^\circ\). A closed-form first-principles derivation of this angle remains incomplete. The present note therefore does not claim a theorem. Instead, it asks a simpler and more experimentally accessible question: does a narrow, reproducible, structurally non-generic phase basin appear when familiar laboratory observables are examined through a GEM-style structural lens?
+
+The proposed programme uses ordinary equipment and ordinary measurable outputs. The novelty lies not in exotic detector hardware, but in the reinterpretation of known observables --- especially phase, hysteresis, recovery, anisotropy, and structured noise --- as possible readouts of basin selection, persistence memory, admissibility, and structural coherence.
+
+\section{What GEM Actually Risks}
+
+To be worth experimental attention, GEM must expose itself to concrete failure. In the present context, the framework risks the following claims:
+
+\begin{enumerate}
+    \item A narrow phase-selected basin may exist, rather than a broad arbitrary response range.
+    \item The most meaningful signature of such a basin may be \emph{hysteresis-loop sharpening}, not merely generic loop displacement.
+    \item Recovery, hysteresis, anisotropy, and structured noise may encode information about basin depth, stiffness, coherence alignment, and admissibility.
+    \item Some observables currently treated as nuisance or loss may carry structural information rather than merely instrumental residue.
+\end{enumerate}
+
+If these claims fail clearly, the relevant sector of GEM is weakened. If they succeed narrowly and reproducibly, GEM gains an experimental foothold.
+
+It is important to state the current theoretical status honestly. A full analytic derivation of the \(255^\circ\) basin is not yet in hand. The present paper therefore concerns \emph{surrogate falsification tests}, not a completed derivation.
+
+\section{Why Ferroelectrics First}
+
+Ferroelectric materials provide the cleanest near-term substrate for a first basin-selection test. They are not proposed because they prove GEM, but because they already possess the physical grammar needed for a sharp falsification attempt:
+
+\begin{itemize}
+    \item persistent polarisation,
+    \item strong hysteretic response,
+    \item measurable switching thresholds,
+    \item controllable anisotropy,
+    \item mature laboratory instrumentation,
+    \item and well-studied domain-wall and pinning physics.
+\end{itemize}
+
+This makes ferroelectrics suitable benchmark systems for asking whether a phase-controlled excitation protocol reveals a narrow and reproducible structural optimum. The relevant question is not whether hysteresis exists --- it already does --- but whether there is a narrow excitation-phase window in which the loop becomes measurably more coherent, sharp, and reproducible.
+
+Possible benchmark materials include:
+\begin{itemize}
+    \item PZT and related lead zirconate titanate systems,
+    \item barium titanate,
+    \item doped or textured ferroelectric ceramics,
+    \item and, at a later stage, multiferroic or tunnel-junction systems.
+\end{itemize}
+
+\section{Test 1: Phase Sweep as Flagship Falsifier}
+
+The flagship test is a phase-angle sweep over the range
+\begin{equation}
+210^\circ \rightarrow 300^\circ.
+\end{equation}
+
+This window is wide enough to avoid trivial cherry-picking, while still covering the displaced-basin region relevant to the candidate \(255^\circ\) sector. A practical protocol would likely begin with a coarse scan and then refine around any candidate basin that appears.
+
+The crucial conceptual move is that excitation phase is treated not merely as a technical drive parameter, but as a candidate selector for structural basin alignment. In standard practice, phase is often regarded as a timing offset or implementation detail. In the present framework, it is precisely that assumption which is being tested.
+
+The main observables during the sweep should include:
+\begin{itemize}
+    \item loop sharpening or smearing,
+    \item cycle-to-cycle variance,
+    \item coercive width,
+    \item branch roughness,
+    \item anisotropy stability,
+    \item and recovery quality after repeated cycling.
+\end{itemize}
+
+\subsection*{Falsification condition}
+If no narrow preferred basin appears in the \(210^\circ \rightarrow 300^\circ\) sweep, or if different observables optimise at unrelated angles without coherent clustering, then the phase-selection claim is weakened.
+
+\section{Test 2: Hysteresis Sharpening Versus Mere Displacement}
+
+A simple loop shift is not a strong signature. Ordinary instrumental bias, electrode asymmetry, defect gradients, built-in strain, or standard drive effects can all move a hysteresis loop. The stronger GEM-style prediction is therefore not shift, but \emph{sharpening}.
+
+Near a candidate basin, the working hypothesis is that the hysteresis loop should become more internally organised. Operationally, that would mean some combination of:
+
+\begin{itemize}
+    \item steeper switching walls,
+    \item reduced loop smearing,
+    \item narrower coercive spread,
+    \item smoother branch structure,
+    \item reduced minor-loop fuzz,
+    \item and reduced cycle-to-cycle drift.
+\end{itemize}
+
+This distinction is essential. A weak prediction says:
+\begin{quote}
+the phase sweep may move the loop.
+\end{quote}
+A strong prediction says:
+\begin{quote}
+the phase sweep may reveal a narrow basin in which the loop becomes structurally cleaner, sharper, and more reproducible.
+\end{quote}
+
+\subsection*{Falsification condition}
+If the phase sweep produces only generic displacement with no local optimum in loop organisation, then the stronger GEM interpretation fails in that sector.
+
+\section{Test 3: Recovery After Perturbation}
+
+The third test targets recovery after controlled perturbation. If GEM basin language has empirical traction, then return behaviour should contain structural information.
+
+A simple protocol would perturb the system under controlled cyclic conditions and then measure the return profile. Relevant outputs include:
+
+\begin{itemize}
+    \item return time,
+    \item overshoot,
+    \item relaxation smoothness,
+    \item restoration quality,
+    \item persistence under repeated stress,
+    \item and recovery after rest.
+\end{itemize}
+
+In GEM language, these are candidate proxies for basin depth and viscosity. In standard laboratory language, they are simply return-to-equilibrium or damping observables. The claim here is not that standard language is wrong, but that a deeper structural interpretation may be available.
+
+\subsection*{Falsification condition}
+If recovery observables do not show a distinct structured optimum near the candidate basin, then the basin-depth interpretation loses support.
+
+\section{Test 4: Noise as Admissibility Proxy}
+
+A further and more provocative test concerns what is usually grouped under ``noise.'' In standard interpretation, branch roughness, threshold jitter, spectral broadening, or unstable variance are often treated as nuisance to be filtered out.
+
+The GEM reinterpretation is weaker and more specific than a blanket redefinition of noise. It says only this: some irregularity may be \emph{structured evidence} of coherence mismatch, basin instability, or admissibility failure.
+
+Candidate outputs include:
+\begin{itemize}
+    \item branch roughness,
+    \item threshold jitter,
+    \item stochastic broadening,
+    \item spectral irregularity,
+    \item and unstable cycle-to-cycle variance.
+\end{itemize}
+
+The question is not whether these effects exist. The question is whether they show a non-generic and reproducible dependence on excitation phase in the vicinity of the candidate basin.
+
+\subsection*{Falsification condition}
+If these observables behave as featureless nuisance with no structured phase dependence, the admissibility reinterpretation is weakened sharply.
+
+\section{A Two-Lane Experimental Strategy}
+
+The most useful experimental strategy is not to bet everything on one material class. A more robust approach is a two-lane programme.
+
+\subsection{Lane A: Benchmark substrate}
+
+The first lane uses a known sharp-switching benchmark, ideally a textured or hard-pinned ferroelectric ceramic. Its role is not to maximise novelty, but to maximise interpretability. If a narrow phase-selected basin exists at all, this is the place where it should be easiest to see.
+
+\subsection{Lane B: Amplifier substrate}
+
+The second lane uses an engineered anisotropic composite, for example an anisotropic cementitious or geopolymer material with a controlled conductive-dielectric network. The purpose here is different: not merely to detect the basin, but to see whether substrate design can amplify or sharpen its visibility.
+
+This two-lane logic matters. Lane A is the cleaner detector. Lane B is the tunable basin amplifier candidate. If the same narrow basin becomes visible across both lanes, the case strengthens. If only one family responds, material-specific explanations grow more likely.
+
+\section{What Success Would Look Like}
+
+Success does not mean simply that \(255^\circ\) ``looks interesting.'' It means that the system exhibits a narrow, reproducible, and structurally distinctive basin.
+
+Specifically, the strongest signature would be:
+
+\begin{quote}
+smallest phase window + sharpest loop + lowest variance + strongest repeatable anisotropic contrast + clean harmonic fingerprint
+\end{quote}
+
+A genuine success pattern should show:
+
+\begin{enumerate}
+    \item \textbf{Narrowness}: a bounded basin rather than a broad plateau.
+    \item \textbf{Coincidence}: multiple observables improving in the same angular neighbourhood.
+    \item \textbf{Sharpness}: a basin that stands out clearly from neighbouring angles.
+    \item \textbf{Robustness}: stability under repeated trials, modest parameter variation, and simple weighting changes.
+    \item \textbf{Transparency}: visibility in both individual observable curves and any composite closure score.
+\end{enumerate}
+
+\section{Clear Falsification Criteria}
+
+To keep the framework honest, the failure conditions must be explicit:
+
+\begin{enumerate}
+    \item If no narrow preferred basin appears in the \(210^\circ \rightarrow 300^\circ\) sweep, the phase-selection claim is weakened.
+    \item If hysteresis shows only generic displacement and no sharpening, the stronger prediction fails.
+    \item If recovery observables show no structural optimum near the candidate basin, basin language loses experimental traction.
+    \item If noise-related observables behave as phase-independent nuisance, the admissibility reinterpretation weakens.
+    \item If all observed effects are fully reducible to conventional drive artefacts with no residual structural signature, GEM gains no special explanatory foothold in this domain.
+\end{enumerate}
+
+\section{Conclusion}
+
+This note is not a validation paper. It is a vulnerability paper. Its purpose is to identify a small number of clear places where GEM can fail.
+
+The proposed phase sweep, hysteresis-sharpening test, recovery test, and admissibility-noise test all use ordinary laboratory infrastructure. What is unusual is not the equipment, but the claim that familiar observables may encode deeper structural information about basin selection, persistence memory, and admissibility.
+
+If no narrow reproducible basin appears, the relevant GEM interpretation is weakened. If a narrow basin does appear, and if multiple structural observables cohere within it, then GEM gains a concrete experimental foothold.
+
+A framework earns seriousness not by how much it claims to explain, but by how clearly it permits itself to fail.
+
+\appendix
+
+\section*{Appendix A: From Standard Observables to GEM Structural Proxies}
+
+The purpose of this appendix is to provide a translation layer between familiar laboratory observables and their possible structural interpretation within GEM. The goal is not to deny standard meanings, but to identify where ordinary measurements may also function as proxies for basin selection, stiffness, admissibility, and persistence structure.
+
+In its stronger form, the translation layer should not remain merely conceptual. Each observable should be paired with a measurable proxy, an expected basin signature, and a clear failure condition. This turns the appendix from a philosophical gloss into a practical experimental scoring framework.
+
+\begingroup
+\small
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.14\textwidth}
+                  >{\raggedright\arraybackslash}p{0.17\textwidth}
+                  >{\raggedright\arraybackslash}p{0.17\textwidth}
+                  >{\raggedright\arraybackslash}p{0.19\textwidth}
+                  >{\raggedright\arraybackslash}p{0.17\textwidth}
+                  >{\raggedright\arraybackslash}p{0.11\textwidth}}
+\toprule
+\textbf{Observable} &
+\textbf{Standard View} &
+\textbf{GEM View} &
+\textbf{Measurable Proxy} &
+\textbf{Expected Near Candidate Basin} &
+\textbf{Failure Condition} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Observable} &
+\textbf{Standard View} &
+\textbf{GEM View} &
+\textbf{Measurable Proxy} &
+\textbf{Expected Near Candidate Basin} &
+\textbf{Failure Condition} \\
+\midrule
+\endhead
+
+Phase \((\theta)\) &
+Technical excitation parameter, timing offset &
+Coherence selector for basin alignment &
+Phase-offset sweep response across \(210^\circ \rightarrow 300^\circ\) &
+Narrow optimum in structural response quality &
+No narrow preferred basin \\
+
+\addlinespace
+
+Hysteresis &
+Dissipative loss under cycling, switching memory &
+Readout of persistence memory and stiffness &
+Loop area, coercive width, switching slope, branch structure &
+Sharper loop, steeper switching, narrower coercive spread &
+Only generic displacement, no sharpening \\
+
+\addlinespace
+
+Noise / irregularity &
+Nuisance fluctuation to suppress or filter out &
+Evidence of admissibility failure or basin mismatch &
+Branch roughness, threshold jitter, cycle-to-cycle variance, spectral broadening, drift &
+Reduced roughness, lower jitter, reduced variance, cleaner spectrum &
+No structured phase dependence \\
+
+\addlinespace
+
+Recovery after perturbation &
+Damping or return-to-equilibrium behaviour &
+Basin-depth and viscosity proxy &
+Return time, overshoot, residual offset, recovery completeness &
+Faster, smoother, more complete return &
+No special recovery structure near candidate basin \\
+
+\addlinespace
+
+Anisotropic relaxation &
+Direction-dependent response &
+Preferred-flow or structural anisotropy proxy &
+Parallel/perpendicular response ratio, directional loop contrast, anisotropic impedance response &
+Stable and repeatable anisotropic contrast &
+No consistent anisotropic signature \\
+
+\addlinespace
+
+Smoothness of overlap / branch structure &
+Interference, disorder, switching irregularity &
+Admissibility proxy &
+Branch smoothness, branch continuity, reproducibility of switching pathways &
+Cleaner branch structure and improved repeatability &
+No improvement in structural smoothness \\
+
+\addlinespace
+
+Harmonic content &
+Higher-order signal content, nonlinear response residue &
+Relic / basin fingerprint &
+\(3\omega\), \(9\omega\), harmonic ratios, harmonic clustering stability &
+Clean repeatable harmonic clustering near candidate basin &
+No coherent harmonic structure \\
+
+\bottomrule
+\end{longtable}
+\end{center}
+\endgroup
+
+A further practical refinement would be to define a composite admissibility score built from several of the above proxies. In schematic form one may write
+\begin{equation}
+A_{\rm score}
+=
+\sum_i w_i Q_i,
+\end{equation}
+where the \(Q_i\) represent normalised structural-quality measures such as low branch roughness, low cycle variance, stable recovery, and harmonic coherence. The purpose of such a score would not be to replace the individual observables, but to summarise whether a narrow phase basin is becoming simultaneously cleaner across multiple diagnostics.
+
+In this way, the first experimental programme of GEM is not the invention of an exotic new detector, but the construction of a disciplined translation layer from standard laboratory outputs to possible structural variables.
+
+\end{document}

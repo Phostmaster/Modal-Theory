@@ -1,0 +1,240 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{The Admissibility of the Vacuum:\\
+Emergence of \texorpdfstring{$A_\mu$}{Amu} from the Global Constraint}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note develops a route from the Global Coherence Framework to electromagnetic connection structure. The starting point is the claim that a global vacuum admissibility condition is not operationally meaningful unless local configurations can be compared consistently across spacetime. If the vacuum carries nontrivial coherence structure, then naive comparison by ordinary partial differentiation is insufficient. A compensating local transport rule is required. When the relevant local redundancy is phase, that transport rule takes the form of a \(U(1)\)-type connection \(A_\mu\). The associated curvature
+\[
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu
+\]
+then appears as the obstruction to path-independent local admissibility transport. Maxwell theory emerges as the minimal low-energy dynamics of that curvature, while matter current arises as the response of transported fields coupled through the same connection. The note does not claim a full uniqueness theorem for all gauge sectors, but it argues that once global vacuum admissibility is taken seriously, connection structure is no longer an arbitrary postulate. In this sense, electromagnetism is reinterpreted as the low-energy curvature language of an admissibility connection required by the vacuum itself.
+\end{abstract}
+
+\section{Introduction}
+
+The purpose of this note is to ask whether gauge connection structure can emerge naturally from the Global Coherence Framework rather than being postulated independently at the outset. The specific target is the electromagnetic connection \(A_\mu\), together with the associated curvature \(F_{\mu\nu}\).
+
+The guiding idea is simple. A global vacuum constraint is not operationally meaningful unless local configurations can be compared consistently across spacetime. If the vacuum is subject to a nontrivial admissibility condition, then naive comparison by ordinary partial differentiation may no longer be sufficient. Some compensating structure is required to preserve coherence under local transport.
+
+In standard gauge theory, such a compensating structure is introduced as a connection. In the present note, the aim is to reverse the logic. Rather than beginning with \(A_\mu\) as a primitive field, we ask whether the need for a connection follows from the requirement that the vacuum remain globally admissible under local phase transport.
+
+The claim advanced here is modest but structurally important. If global admissibility is taken seriously, then a local comparison rule must exist. If the relevant local redundancy is phase, then the compensating comparison structure takes the form of a \(U(1)\)-like connection. In that case, \(A_\mu\) is not inserted as an independent gauge object, but emerges as the field required to implement admissible local transport. Electromagnetic curvature then appears as the obstruction to trivial transport, and Maxwell dynamics arise as the minimal low-energy law governing that curvature.
+
+This note should therefore be read not as a full derivation of all electromagnetic structure from first principles, but as a route from global vacuum admissibility to connection-like local transport, with Maxwell form emerging as the minimal low-energy completion.
+
+\section{Global Admissibility and the Need for Local Comparison}
+
+In the Global Coherence Framework, physical configurations are not characterised solely by local field values. They must also satisfy a broader admissibility requirement: the configuration must be globally coherent, transportable, and non-contradictory across spacetime. A schematic way to express this is
+\begin{equation}
+\mathcal{C}[\text{configuration}] = \text{admissible}.
+\end{equation}
+
+At this level, the statement is global. It distinguishes allowed from disallowed configurations, but it does not yet specify how one tests local consistency from point to point. That is the first missing ingredient.
+
+Suppose \(\psi(x)\) denotes a local vacuum amplitude or matter amplitude defined on spacetime. Ordinary partial differentiation,
+\begin{equation}
+\partial_\mu \psi,
+\end{equation}
+implicitly assumes that the value of \(\psi\) at nearby points can be compared directly in a trivial background. But if the vacuum itself carries nontrivial admissibility structure, then such direct comparison is no longer guaranteed to be meaningful. The issue is not merely that the field changes from point to point. The issue is that the rule by which one compares neighbouring configurations may itself be nontrivial.
+
+This is the key conceptual hinge. A global coherence condition cannot function in practice unless there exists a local transport rule for comparing nearby states. Without such a rule, the phrase ``globally admissible'' has no operational content, because one cannot say how local phases, amplitudes, or internal orientations are being related across spacetime.
+
+The natural consequence is that ordinary differentiation must be upgraded. Instead of assuming trivial comparison, one must introduce a local comparison structure:
+\begin{equation}
+D_\mu = \partial_\mu + \Gamma_\mu,
+\end{equation}
+where \(\Gamma_\mu\) represents whatever compensating object is required to preserve admissible local transport.
+
+At this stage, \(\Gamma_\mu\) is just a symbol for nontrivial comparison structure. It is not yet identified with electromagnetism. The point is only that global admissibility forces the existence of some local transport bookkeeping if the framework is to remain operationally meaningful.
+
+\section{Emergence of a Connection from Local Phase Transport}
+
+The next step is to ask what form the comparison structure takes when the relevant local ambiguity is phase.
+
+Suppose the local field \(\psi(x)\) is physically meaningful only up to a point-dependent phase redefinition,
+\begin{equation}
+\psi(x) \to e^{i\alpha(x)}\psi(x).
+\end{equation}
+If global admissibility is to be preserved under such local rephasing, then the local comparison law must transform covariantly. In other words, the derivative-like object acting on \(\psi\) must not destroy physical equivalence when the phase convention changes from point to point.
+
+This requirement immediately forces a connection structure. The naive derivative \(\partial_\mu\psi\) does not transform covariantly under local phase redefinition, because differentiating \(e^{i\alpha(x)}\psi(x)\) produces an extra term involving \(\partial_\mu \alpha\). To compensate for that term, the local comparison operator must be modified to
+\begin{equation}
+D_\mu = \partial_\mu + igA_\mu,
+\end{equation}
+where \(A_\mu\) is a connection field and \(g\) is the coupling associated with the phase transport sector.
+
+Demanding covariance,
+\begin{equation}
+D_\mu \psi \to e^{i\alpha(x)}D_\mu\psi,
+\end{equation}
+then requires the transformation law
+\begin{equation}
+A_\mu \to A_\mu - \frac{1}{g}\partial_\mu \alpha.
+\end{equation}
+
+This is the crucial emergence step. Gauge transformation is not imposed first and then decorated with physical interpretation. Rather, once global admissibility is taken seriously and local phase comparison is allowed to be nontrivial, a compensating connection is required. That connection has exactly the transformation structure of a \(U(1)\) gauge field.
+
+In this sense, \(A_\mu\) is not an arbitrary extra field inserted by hand. It is the local comparison object required to preserve globally admissible phase transport across spacetime. The electromagnetic interpretation comes later. What emerges first is connection structure.
+
+The next question is then immediate: if \(A_\mu\) is the connection, what quantity measures its nontriviality? The answer is curvature, and this is where the familiar field strength tensor appears.
+
+\section{Curvature as Failure of Trivial Admissibility Transport}
+
+Once a connection structure \(A_\mu\) has emerged, the next question is how to measure whether local transport is trivial or nontrivial. The natural test is to compare the result of transporting a local state along two infinitesimally different paths. If the comparison is path-independent, then local admissibility transport is flat. If the result depends on path, then the connection has nonzero curvature.
+
+This is captured by the commutator of covariant derivatives. Using
+\begin{equation}
+D_\mu = \partial_\mu + igA_\mu,
+\end{equation}
+one computes
+\begin{equation}
+[D_\mu,D_\nu]\psi
+=
+ig\bigl(\partial_\mu A_\nu - \partial_\nu A_\mu\bigr)\psi.
+\end{equation}
+
+This identifies the curvature tensor as
+\begin{equation}
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+
+The meaning of \(F_{\mu\nu}\) in the present framework is therefore clear. It is not introduced as a primary object. It is the obstruction to path-independent admissibility transport. If \(F_{\mu\nu}=0\), then neighbouring local states can be compared consistently without geometric residue. If \(F_{\mu\nu}\neq 0\), then the vacuum carries nontrivial transport curvature.
+
+In this sense, electromagnetic field strength is reinterpreted as the curvature of the admissibility connection. The familiar antisymmetry of \(F_{\mu\nu}\) follows automatically, because it arises from the difference between transport in two local directions. The field tensor is thus not an extra postulate layered on top of the connection, but the natural measure of how local vacuum transport fails to remain trivial around infinitesimal loops.
+
+This point is one of the main conceptual gains of the framework. The connection \(A_\mu\) is required by admissible local comparison. The curvature \(F_{\mu\nu}\) is required by the nontriviality of that comparison. Gauge structure and field strength therefore appear in a single chain rather than as separate axioms.
+
+\section{Maxwell Dynamics as the Minimal Low-Energy Completion}
+
+Once the curvature tensor \(F_{\mu\nu}\) has emerged, one may ask what dynamics govern it at low energy. Here the admissibility logic becomes economical. The theory should remain local, Lorentz compatible, and invariant under the connection redundancy already established. The simplest scalar density satisfying these requirements is
+\begin{equation}
+\mathcal{L}_{\rm EM}
+=
+-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}.
+\end{equation}
+
+This is the standard Maxwell kinetic term, but its role is different here. It is not introduced because electromagnetism is assumed in advance. It appears as the minimal low-energy action built from the curvature of the admissibility connection.
+
+This makes the Maxwell sector structurally natural. Once a \(U(1)\)-type connection has emerged from local phase comparison, and once its curvature has been identified as \(F_{\mu\nu}\), there are very few admissible low-energy choices. The quadratic curvature scalar is the simplest nontrivial local invariant. In this sense, Maxwell theory is not an arbitrary embellishment of the vacuum, but the minimal dynamical law governing admissibility curvature at low energy.
+
+Variation of the action with respect to \(A_\mu\) then gives
+\begin{equation}
+\partial_\mu F^{\mu\nu}=0
+\end{equation}
+in the vacuum case. These are the source-free Maxwell equations. Their interpretation in the present framework is that admissibility curvature propagates according to the simplest Lorentz-compatible law available to the emergent connection.
+
+The homogeneous identity
+\begin{equation}
+\partial_{[\alpha}F_{\beta\gamma]}=0
+\end{equation}
+follows from the fact that \(F_{\mu\nu}\) is defined as the exterior curl of a connection. This is not a separate dynamical assumption, but a geometric identity built into the transport structure itself.
+
+Accordingly, the Maxwell sector may be summarised as follows: once the vacuum requires a nontrivial local comparison rule, and once that rule is described by a connection, the field strength appears as curvature and the minimal low-energy curvature dynamics are Maxwellian.
+
+\section{Matter Coupling and the Emergence of Current}
+
+The next step is to include matter or local vacuum excitations that are transported by the same admissibility structure. If \(\psi\) denotes such a field, then the natural coupling is already built into the covariant derivative:
+\begin{equation}
+D_\mu = \partial_\mu + igA_\mu.
+\end{equation}
+
+For a standard Dirac field, the matter sector takes the form
+\begin{equation}
+\mathcal{L}_{\rm matter}
+=
+\bar{\psi}(i\gamma^\mu D_\mu - m)\psi.
+\end{equation}
+
+The significance of this form is that matter does not couple to \(A_\mu\) because electromagnetism is externally imposed. It couples because the same admissibility connection that preserves local phase comparison for the vacuum must also govern the transport of the matter field. In that sense, matter inherits the connection rather than discovering it independently.
+
+Varying the full action with respect to \(A_\mu\) yields
+\begin{equation}
+\partial_\mu F^{\mu\nu}=J^\nu,
+\end{equation}
+where the current is
+\begin{equation}
+J^\nu = g\,\bar{\psi}\gamma^\nu\psi
+\end{equation}
+in the Dirac case.
+
+Thus current is not an arbitrary source added to Maxwell’s equations by hand. It is the response of matter transport to the same connection structure that emerged from vacuum admissibility. The field and the source are therefore tied together by a single transport logic.
+
+This gives the full interpretive sequence:
+\begin{itemize}
+    \item global vacuum admissibility requires consistent local comparison,
+    \item consistent local comparison requires a connection,
+    \item connection curvature gives \(F_{\mu\nu}\),
+    \item minimal low-energy curvature dynamics give Maxwell form,
+    \item and matter transport through the same connection generates current.
+\end{itemize}
+
+In this way, both the electromagnetic field and its source coupling arise within a common admissibility framework. The connection is primary, curvature is its geometric nontriviality, and current is the matter-sector response to transport through that nontrivial vacuum structure.
+
+\section{What Has and Has Not Been Shown}
+
+It is important to state clearly the scope of the present argument.
+
+What has been shown is a structural route from a global vacuum admissibility condition to a local connection-like transport law. Once the need for nontrivial local comparison is admitted, and once the relevant local redundancy is taken to be phase, the emergence of a \(U(1)\)-type connection follows naturally. From that point, curvature appears as the obstruction to path-independent local transport, and the minimal low-energy invariant built from that curvature is the Maxwell kinetic term.
+
+In this sense, the note provides a derivation pathway for the appearance of \(A_\mu\), \(F_{\mu\nu}\), and Maxwell-type dynamics from the logic of global admissibility and local transport consistency.
+
+What has not been shown is a full uniqueness theorem. The present argument does not yet prove that electromagnetism is the only possible connection sector compatible with admissibility, nor does it derive the full non-Abelian structure of the Standard Model. It also does not yet embed the \(A_\mu\) derivation tightly back into the full two-scalar Modal Theory machinery at the level of explicit ultraviolet reduction. Those remain further tasks.
+
+The present claim is therefore specific and limited. It is not that all of gauge theory has been derived in complete final form, but that connection structure is no longer an arbitrary postulate once global admissibility is taken seriously. In the phase-transport sector, \(A_\mu\) emerges as the natural compensating field, and Maxwell curvature dynamics emerge as the minimal low-energy completion.
+
+This limitation should be seen as a strength rather than a weakness. It keeps the argument focused on the conceptual bottleneck: if global coherence is meaningful, then local comparison cannot remain trivial. Once that point is granted, the appearance of connection structure is difficult to avoid.
+
+\section{Conclusion}
+
+The central result of this note is that the electromagnetic connection need not be introduced as an independent primitive object. Instead, it can be understood as the field required to implement locally admissible transport under a global vacuum coherence constraint.
+
+The logic may be summarised in a single chain:
+\[
+\begin{aligned}
+\text{global admissibility}
+&\to
+\text{nontrivial local comparison}
+\to
+\text{connection } A_\mu
+\\[4pt]
+&\to
+\text{curvature } F_{\mu\nu}
+\to
+\text{Maxwell low-energy dynamics}.
+\end{aligned}
+\]
+
+This reinterprets electromagnetism at a structural level. The connection \(A_\mu\) is not added because gauge theory is assumed first. It appears because local states cannot be compared consistently across a nontrivial vacuum without a compensating transport rule. Once such a rule exists, curvature follows, and Maxwell form becomes the simplest admissible low-energy dynamics of that curvature.
+
+The broader significance is that admissibility is no longer merely a global selection principle. It becomes a generative principle. It not only filters which configurations may belong, but forces the appearance of the local structures needed to make that belonging operationally meaningful.
+
+In that sense, the emergence of \(A_\mu\) from the global vacuum constraint is not a peripheral curiosity. It is a demonstration that the admissibility of the vacuum can generate field structure rather than merely constrain it.
+
+\section{Closing Perspective}
+
+If this route is correct, then one of the long-standing asymmetries in theoretical physics begins to close. Gauge fields are usually introduced as local structures first, with global consistency appearing afterward. Here the order is reversed. The global vacuum constraint comes first, and the local connection appears because the global condition cannot otherwise be maintained.
+
+That reversal matters. It suggests that field structure may be more deeply rooted in the admissibility of the vacuum than in the independent autonomy of gauge sectors. Electromagnetism would then be the low-energy curvature language of a deeper transport requirement, not an isolated force simply written into the laws from the beginning.
+
+This does not yet complete the programme. But it sharpens the direction of travel. If the vacuum must be admissible, then the comparison of local states cannot be naive. If local comparison cannot be naive, then connection structure is not optional. And if that structure is phase-valued, then \(A_\mu\) is already waiting in the mathematics.
+
+That is the real claim of the present note.
+
+\end{document}

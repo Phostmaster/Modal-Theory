@@ -1,0 +1,175 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Modal Theory v12: Self-Consistent Geometric--Dynamical Closure and the 255\textdegree\ Attractor}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{17 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory v12 presents a flat-space two-scalar framework intended to unify the Standard Model, gravity, and cosmology through a single geometric--dynamical closure structure. The theory is built from two real scalar fields \(\Phi_1\) and \(\Phi_2\) interacting through a gravitational-strength coupling \(g_{\rm mode}=4\pi G\), with the relative phase \(\theta\) embedded on the equator of \(S^2\) and constrained by a \(Z_3\) orbifold together with a \(Z_2\) chiral bias.
+
+The \(S^2\) embedding fixes the harmonic grammar of the phase sector. The symmetric potential is identified as the lowest Fourier harmonic compatible with the \(Z_3\) orbifold, giving the baseline term \(-\cos(3\theta)\). Projection onto the \(60^\circ\) chiral axis fixes the \(\sqrt{3}\) coefficient in the bias sector. The central result of v12 is a geometric derivation of the 15\textdegree\ offset from the \(240^\circ\) baseline minimum to the \(255^\circ\) attractor. A hexagonal reciprocal-space baseline has a \(60^\circ\) fundamental symmetry sector. The maximal inequivalent chiral twist is therefore \(30^\circ\). Superposing the original and \(30^\circ\)-rotated reciprocal lattices yields a 12-direction interference superstructure with a \(30^\circ\) fundamental domain. Least-frustration relaxation to the bisector of that domain produces a precessional offset of \(15^\circ=\pi/12\). Applied to the \(240^\circ\) baseline, this yields the attractor \(255^\circ=17\pi/12\).
+
+The microscopic interference structure is then integrated out into a coarse-grained infrared envelope, giving a periodic low-energy phase potential centered on the derived attractor and avoiding double-counting of the ultraviolet geometric generators. In this way, the 255\textdegree\ phase appears as the natural candidate output of the full geometric--dynamical closure.
+\end{abstract}
+
+\section{Introduction}
+
+Modal Theory begins from the assumption that the vacuum is described by two coupled real scalar fields and that the observable structure of physics emerges from the phase geometry of their interaction. The aim is to replace ad hoc parameter-setting by a self-consistent geometric--dynamical closure.
+\end{document}\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Modal Theory v12: Self-Consistent Geometric--Dynamical Closure and the 255\textdegree\ Attractor}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{17 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory v12 presents a flat-space two-scalar framework intended to unify the Standard Model, gravity, and cosmology through a single geometric--dynamical closure structure. The theory is built from two real scalar fields \(\Phi_1\) and \(\Phi_2\) interacting through a gravitational-strength coupling \(g_{\rm mode}=4\pi G\), with the relative phase \(\theta\) embedded on the equator of \(S^2\) and constrained by a \(Z_3\) orbifold together with a \(Z_2\) chiral bias.
+
+The \(S^2\) embedding fixes the harmonic grammar of the phase sector. The symmetric potential is identified as the lowest Fourier harmonic compatible with the \(Z_3\) orbifold, giving the baseline term \(-\cos(3\theta)\). Projection onto the \(60^\circ\) chiral axis fixes the \(\sqrt{3}\) coefficient in the bias sector. The central result of v12 is a geometric derivation of the 15\textdegree\ offset from the \(240^\circ\) baseline minimum to the \(255^\circ\) attractor. A hexagonal reciprocal-space baseline has a \(60^\circ\) fundamental symmetry sector. The maximal inequivalent chiral twist is therefore \(30^\circ\). Superposing the original and \(30^\circ\)-rotated reciprocal lattices yields a 12-direction interference superstructure with a \(30^\circ\) fundamental domain. Least-frustration relaxation to the bisector of that domain produces a precessional offset of \(15^\circ=\pi/12\). Applied to the \(240^\circ\) baseline, this yields the attractor \(255^\circ=17\pi/12\).
+
+The microscopic interference structure is then integrated out into a coarse-grained infrared envelope, giving a periodic low-energy phase potential centered on the derived attractor and avoiding double-counting of the ultraviolet geometric generators. In this way, the 255\textdegree\ phase appears as the natural candidate output of the full geometric--dynamical closure.
+\end{abstract}
+
+\section{Introduction}
+
+Modal Theory begins from the assumption that the vacuum is described by two coupled real scalar fields and that the observable structure of physics emerges from the phase geometry of their interaction. The aim is to replace ad hoc parameter-setting by a self-consistent geometric--dynamical closure.
+\end{document}\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Modal Theory v12: Self-Consistent Geometric--Dynamical Closure and the 255\textdegree\ Attractor}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{17 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory v12 presents a flat-space two-scalar framework intended to unify the Standard Model, gravity, and cosmology through a single geometric--dynamical closure structure. The theory is built from two real scalar fields \(\Phi_1\) and \(\Phi_2\) interacting through a gravitational-strength coupling \(g_{\rm mode}=4\pi G\), with the relative phase \(\theta\) embedded on the equator of \(S^2\) and constrained by a \(Z_3\) orbifold together with a \(Z_2\) chiral bias.
+
+The \(S^2\) embedding fixes the harmonic grammar of the phase sector. The symmetric potential is identified as the lowest Fourier harmonic compatible with the \(Z_3\) orbifold, giving the baseline term \(-\cos(3\theta)\). Projection onto the \(60^\circ\) chiral axis fixes the \(\sqrt{3}\) coefficient in the bias sector. The central result of v12 is a geometric derivation of the 15\textdegree\ offset from the \(240^\circ\) baseline minimum to the \(255^\circ\) attractor. A hexagonal reciprocal-space baseline has a \(60^\circ\) fundamental symmetry sector. The maximal inequivalent chiral twist is therefore \(30^\circ\). Superposing the original and \(30^\circ\)-rotated reciprocal lattices yields a 12-direction interference superstructure with a \(30^\circ\) fundamental domain. Least-frustration relaxation to the bisector of that domain produces a precessional offset of \(15^\circ=\pi/12\). Applied to the \(240^\circ\) baseline, this yields the attractor \(255^\circ=17\pi/12\).
+
+The microscopic interference structure is then integrated out into a coarse-grained infrared envelope, giving a periodic low-energy phase potential centered on the derived attractor and avoiding double-counting of the ultraviolet geometric generators. In this way, the 255\textdegree\ phase appears as the natural candidate output of the full geometric--dynamical closure.
+\end{abstract}
+
+\section{Introduction}
+
+Modal Theory begins from the assumption that the vacuum is described by two coupled real scalar fields and that the observable structure of physics emerges from the phase geometry of their interaction. The aim is to replace ad hoc parameter-setting by a self-consistent geometric--dynamical closure.
+\end{document}\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Modal Theory v12: Self-Consistent Geometric--Dynamical Closure and the 255\textdegree\ Attractor}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{17 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory v12 presents a flat-space two-scalar framework intended to unify the Standard Model, gravity, and cosmology through a single geometric--dynamical closure structure. The theory is built from two real scalar fields \(\Phi_1\) and \(\Phi_2\) interacting through a gravitational-strength coupling \(g_{\rm mode}=4\pi G\), with the relative phase \(\theta\) embedded on the equator of \(S^2\) and constrained by a \(Z_3\) orbifold together with a \(Z_2\) chiral bias.
+
+The \(S^2\) embedding fixes the harmonic grammar of the phase sector. The symmetric potential is identified as the lowest Fourier harmonic compatible with the \(Z_3\) orbifold, giving the baseline term \(-\cos(3\theta)\). Projection onto the \(60^\circ\) chiral axis fixes the \(\sqrt{3}\) coefficient in the bias sector. The central result of v12 is a geometric derivation of the 15\textdegree\ offset from the \(240^\circ\) baseline minimum to the \(255^\circ\) attractor. A hexagonal reciprocal-space baseline has a \(60^\circ\) fundamental symmetry sector. The maximal inequivalent chiral twist is therefore \(30^\circ\). Superposing the original and \(30^\circ\)-rotated reciprocal lattices yields a 12-direction interference superstructure with a \(30^\circ\) fundamental domain. Least-frustration relaxation to the bisector of that domain produces a precessional offset of \(15^\circ=\pi/12\). Applied to the \(240^\circ\) baseline, this yields the attractor \(255^\circ=17\pi/12\).
+
+The microscopic interference structure is then integrated out into a coarse-grained infrared envelope, giving a periodic low-energy phase potential centered on the derived attractor and avoiding double-counting of the ultraviolet geometric generators. In this way, the 255\textdegree\ phase appears as the natural candidate output of the full geometric--dynamical closure.
+\end{abstract}
+
+\section{Introduction}
+
+Modal Theory begins from the assumption that the vacuum is described by two coupled real scalar fields and that the observable structure of physics emerges from the phase geometry of their interaction. The aim is to replace ad hoc parameter-setting by a self-consistent geometric--dynamical closure.
+\end{document}\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Modal Theory v12: Self-Consistent Geometric--Dynamical Closure and the 255\textdegree\ Attractor}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{17 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory v12 presents a flat-space two-scalar framework intended to unify the Standard Model, gravity, and cosmology through a single geometric--dynamical closure structure. The theory is built from two real scalar fields \(\Phi_1\) and \(\Phi_2\) interacting through a gravitational-strength coupling \(g_{\rm mode}=4\pi G\), with the relative phase \(\theta\) embedded on the equator of \(S^2\) and constrained by a \(Z_3\) orbifold together with a \(Z_2\) chiral bias.
+
+The \(S^2\) embedding fixes the harmonic grammar of the phase sector. The symmetric potential is identified as the lowest Fourier harmonic compatible with the \(Z_3\) orbifold, giving the baseline term \(-\cos(3\theta)\). Projection onto the \(60^\circ\) chiral axis fixes the \(\sqrt{3}\) coefficient in the bias sector. The central result of v12 is a geometric derivation of the 15\textdegree\ offset from the \(240^\circ\) baseline minimum to the \(255^\circ\) attractor. A hexagonal reciprocal-space baseline has a \(60^\circ\) fundamental symmetry sector. The maximal inequivalent chiral twist is therefore \(30^\circ\). Superposing the original and \(30^\circ\)-rotated reciprocal lattices yields a 12-direction interference superstructure with a \(30^\circ\) fundamental domain. Least-frustration relaxation to the bisector of that domain produces a precessional offset of \(15^\circ=\pi/12\). Applied to the \(240^\circ\) baseline, this yields the attractor \(255^\circ=17\pi/12\).
+
+The microscopic interference structure is then integrated out into a coarse-grained infrared envelope, giving a periodic low-energy phase potential centered on the derived attractor and avoiding double-counting of the ultraviolet geometric generators. In this way, the 255\textdegree\ phase appears as the natural candidate output of the full geometric--dynamical closure.
+\end{abstract}
+
+\section{Introduction}
+
+Modal Theory begins from the assumption that the vacuum is described by two coupled real scalar fields and that the observable structure of physics emerges from the phase geometry of their interaction. The aim is to replace ad hoc parameter-setting by a self-consistent geometric--dynamical closure.
+\end{document}\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Modal Theory v12: Self-Consistent Geometric--Dynamical Closure and the 255\textdegree\ Attractor}
+\author{Peter Baldwin \\ \texttt{peterbaldwin1000@gmail.com}}
+\date{17 May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Modal Theory v12 presents a flat-space two-scalar framework intended to unify the Standard Model, gravity, and cosmology through a single geometric--dynamical closure structure. The theory is built from two real scalar fields \(\Phi_1\) and \(\Phi_2\) interacting through a gravitational-strength coupling \(g_{\rm mode}=4\pi G\), with the relative phase \(\theta\) embedded on the equator of \(S^2\) and constrained by a \(Z_3\) orbifold together with a \(Z_2\) chiral bias.
+
+The \(S^2\) embedding fixes the harmonic grammar of the phase sector. The symmetric potential is identified as the lowest Fourier harmonic compatible with the \(Z_3\) orbifold, giving the baseline term \(-\cos(3\theta)\). Projection onto the \(60^\circ\) chiral axis fixes the \(\sqrt{3}\) coefficient in the bias sector. The central result of v12 is a geometric derivation of the 15\textdegree\ offset from the \(240^\circ\) baseline minimum to the \(255^\circ\) attractor. A hexagonal reciprocal-space baseline has a \(60^\circ\) fundamental symmetry sector. The maximal inequivalent chiral twist is therefore \(30^\circ\). Superposing the original and \(30^\circ\)-rotated reciprocal lattices yields a 12-direction interference superstructure with a \(30^\circ\) fundamental domain. Least-frustration relaxation to the bisector of that domain produces a precessional offset of \(15^\circ=\pi/12\). Applied to the \(240^\circ\) baseline, this yields the attractor \(255^\circ=17\pi/12\).
+
+The microscopic interference structure is then integrated out into a coarse-grained infrared envelope, giving a periodic low-energy phase potential centered on the derived attractor and avoiding double-counting of the ultraviolet geometric generators. In this way, the 255\textdegree\ phase appears as the natural candidate output of the full geometric--dynamical closure.
+\end{abstract}
+
+\section{Introduction}
+
+Modal Theory begins from the assumption that the vacuum is described by two coupled real scalar fields and that the observable structure of physics emerges from the phase geometry of their interaction. The aim is to replace ad hoc parameter-setting by a self-consistent geometric--dynamical closure.
+\end{document}
